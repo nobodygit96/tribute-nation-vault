@@ -1,6 +1,6 @@
 ---
 tags: [kb, log, changelog, MARKETING]
-aggiornato: 2026-08-16
+aggiornato: 2026-08-17
 ---
 
 # Log — Cronologia aggiornamenti KB
@@ -9,6 +9,7 @@ aggiornato: 2026-08-16
 
 > **Una riga per entry, non un paragrafo** (pattern LLM Wiki di Karpathy: il log dev'essere grep-abile, non narrativo — il "perché" e i dettagli vivono nella nota toccata, non qui). Formato: `- **YYYY-MM-DD** [tag] testo breve. [[Note toccate]].` Tag: `ingest` (nuova fonte esterna integrata), `verifica` (controllo diretto fatto, es. sul sito live), `correzione` (fix di un errore precedente in KB), `audit` (lint passato, contraddizioni/link/frontmatter), `struttura` (riorganizzazione della KB stessa). Più recente in alto.
 
+- **2026-08-17** [ingest] Mappata su [[Materiali-NAS]] la cartella `POST CALENDARIO\` (non ancora indicizzata), trovata lavorando alla caption del "Live della Nation" 17-23 agosto: contiene il carosello settimanale roundup live, uno zip a settimana.
 - **2026-08-17** [struttura] Creato task Windows `TributeNationVault-DailySync` (22:10, stesso pattern di `TributeNationKB-DailySync`) per tenere `tribute-nation-vault` sempre allineato senza intervento manuale. Testato manualmente, verde — ha anche beccato un `__pycache__/` committato per sbaglio, ripulito e aggiunto a `.gitignore`. [[Strumenti-e-Risorse]].
 - **2026-08-17** [correzione] Risolto il limite del logo TN legato a `Z:\` (NAS): copiato in `tools/spotlight/assets/`, versionato nel repo, script aggiornati a percorso relativo. Ora gli script funzionano su qualunque macchina senza NAS mappato — preferito a Google Drive (che avrebbe aggiunto una dipendenza di rete/auth per un asset statico piccolo che basta versionare). [[Strumenti-e-Risorse]].
 - **2026-08-17** [struttura] **Questo vault è ora un repository git**: `nobodygit96/tribute-nation-vault` (privato), causa diretta di un HANDOFF di Daniele che segnalava wikilink rotti nella skill `spotlight` (referenziava note/script mai sincronizzati su git). `.claude/skills/spotlight/` reso file reale (era junction), rimosso il duplicato da `tribute-nation-kb`. `.claude/agents/` resta junction locale, escluso da git qui (dominio sito, non duplicato). Verificato con clone pulito: tutto risolve. [[Strumenti-e-Risorse]].

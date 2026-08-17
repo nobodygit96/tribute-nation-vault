@@ -1,6 +1,6 @@
 ---
 tags: [kb, nas, materiali, storage, MARKETING]
-aggiornato: 2026-08-16
+aggiornato: 2026-08-17
 ---
 
 # Materiali NAS — Indice e Regole di Salvataggio
@@ -24,6 +24,7 @@ Il NAS è raggiungibile come cartella di rete già mappata su Windows: **`Z:\`**
 | `VenueDaPubblicare\<Locale>\` | Foto locale, in coda — stesso pattern "in coda" del Venue Tracker Notion |
 | `VenuePubblicati\<Locale>\` | Foto locale, dopo pubblicazione — spostare qui da sopra a lavoro finito |
 | `LogMonitor\tn-monitor-sicurezza.csv` | Log del Monitor interno di Daniele (vedi [[Funzionalita-Sito-e-Area-Riservata]]) |
+| `POST CALENDARIO\<DD_DD_MESE_ANno>.zip` | Carosello "Live della Nation" (contenuto del lunedì, vedi [[Calendario-Editoriale]]): roundup settimanale di tutti i live delle band della Nation, uno zip a settimana con slide numerate (cover + una per giorno con live programmati + chiusura "alla prossima settimana") |
 | `TributeNation\` | Cartella mista: loghi brand (`LOGO_*.png/.psd`), asset sito, briefing/questionario, bundle deploy PHP (`SitoPhP\`), story "Live della settimana" (`calendario\`). Contiene anche `OBSIDIAN_TN\` — **uno snapshot vecchio e disallineato della KB** (ha ancora `Benvenuto.md`, eliminato dalla KB vera il 2026-08-16): non è una fonte di verità, ignorarlo. |
 
 ## Pattern dentro ogni cartella band (`Band della nation\<Nome>\`)
