@@ -1,2 +1,4 @@
 .obsidian/
 .claude/agents/
+__pycache__/
+*.pyc
