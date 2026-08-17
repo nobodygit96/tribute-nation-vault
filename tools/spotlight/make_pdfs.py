@@ -30,7 +30,8 @@ FONT_DIR = os.path.join(SCRIPT_DIR, "fonts")
 pdfmetrics.registerFont(TTFont("Bebas", os.path.join(FONT_DIR, "BebasNeue-Regular.ttf")))
 pdfmetrics.registerFont(TTFont("DMSans", os.path.join(FONT_DIR, "dmsans_variable.ttf")))
 
-LOGO = r"Z:\TRIBUTE NATION\TributeNation\LOGO_ORIZZONTALE_RED.png"
+# Logo TN versionato nel repo (assets/), non sul NAS — funziona su qualunque macchina.
+LOGO = os.path.join(SCRIPT_DIR, "assets", "LOGO_ORIZZONTALE_RED.png")
 FOOTER_LEFT = "@_tribute_nation_  ·  www.tributenation.it"
 MARGIN = 70
 

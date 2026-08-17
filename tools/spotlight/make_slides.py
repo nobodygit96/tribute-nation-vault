@@ -40,8 +40,9 @@ FONT_DIR = os.path.join(SCRIPT_DIR, "fonts")
 BEBAS = os.path.join(FONT_DIR, "BebasNeue-Regular.ttf")
 DMSANS = os.path.join(FONT_DIR, "dmsans_variable.ttf")
 
-# Logo TN per il footer: fonte unica sul NAS, non duplicare localmente.
-LOGO_TN = r"Z:\TRIBUTE NATION\TributeNation\LOGO_ORIZZONTALE_RED.png"
+# Logo TN per il footer: versionato nel repo (assets/), non sul NAS —
+# così lo script funziona identico su qualunque macchina senza Z:\ mappato.
+LOGO_TN = os.path.join(SCRIPT_DIR, "assets", "LOGO_ORIZZONTALE_RED.png")
 
 PAD = 90
 
