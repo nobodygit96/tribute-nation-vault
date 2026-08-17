@@ -44,6 +44,16 @@ Brevo — gestione consenso, privacy policy.
 - **Su questo PC** (Vale), Google Drive Desktop è installato e sincronizza su `G:\Il mio Drive\` — creare/copiare file lì (via Bash/PowerShell) è il modo più veloce, sync automatico.
 - 🔧 **Percorso tecnico per la condivisione (link/permessi)**: **non è possibile farlo da Esplora File** — sia l'app nativa "Esplora file" sia l'app "Google Drive" (che su Windows è solo un driver, apre comunque Esplora File) sono concesse a tier "click": niente tasto destro, il pannello di condivisione nativo di Windows non è visibile/controllabile. L'unica via che funziona è il **browser (estensione Claude in Chrome)**: aprire drive.google.com, verificare/cambiare account dall'icona profilo in alto a destra (i vari account Google sono già autenticati nel browser, basta selezionarli, non serve login), poi tasto destro sulla cartella → Condividi → Condividi → Accesso generale → "Chiunque abbia il link" → Visualizzatore → Copia link (poi leggibile da clipboard via `Get-Clipboard` in PowerShell). Il browser via `computer-use` nativo NON funziona per questo (i browser sono sempre concessi in sola lettura lì).
 
+## Questo vault è ora un repository git (dal 2026-08-17)
+
+- **Repo**: [`nobodygit96/tribute-nation-vault`](https://github.com/nobodygit96/tribute-nation-vault) (privato). Identità git locale: `Nobody_Git96` / email noreply di `nobodygit96` — stessa identità condivisa usata su `tribute-nation-kb`.
+- **Perché**: la skill `spotlight` referenziava 6 note + 2 script che vivevano solo qui, mai su git — rotta per chiunque non avesse questo vault in locale (Daniele l'ha scoperto via audit). Dettagli completi in `sessioni/2026-08-17_root-cause-analysis-spotlight-skill.md` dentro `tribute-nation-kb`.
+- **`.claude/skills/spotlight/`**: ora file reale in questo repo (prima raggiungibile solo via junction NTFS verso `tribute-nation-kb`) — verificato con un clone pulito in una cartella temporanea: tutti i wikilink e gli script risolvono.
+- **`.claude/agents/`**: resta una junction locale verso `tribute-nation-kb` (agenti `tn-deploy-reviewer`, `tn-second-opinion`, dominio sito) — **esclusa da git qui** (`.gitignore`) per non duplicarla. Su questa macchina funziona comunque per comodità; da un clone pulito del vault, quegli agenti semplicemente non ci sono (corretto: non sono di questo dominio).
+- **`.gitignore`**: solo `.obsidian/` (stato locale dell'app, non contenuto).
+- 🔧 **Limite noto non risolto**: gli script (`make_slides.py`, `make_pdfs.py`) referenziano il logo TN da un percorso assoluto sul NAS (`Z:\TRIBUTE NATION\TributeNation\LOGO_ORIZZONTALE_RED.png`). Il codice ora viaggia correttamente via git, ma **l'esecuzione resta legata a `Z:\` mappato allo stesso modo** su qualunque macchina lo lanci — non verificato che sia così anche sul PC di Daniele.
+- 🔧 **Nessun sync automatico ancora**: `tribute-nation-kb` ha un task Windows che fa commit→pull→push ogni sera (vedi sotto); questo vault no. Se si continua a editare senza pushare a mano, il gap può riaprirsi. Da valutare con Vale se serve lo stesso automatismo qui.
+
 ## NAS
 
 Materiali (foto/loghi band, grafiche, video) su NAS montato come `Z:\` (`\\NASNEW\Documenti`), cartella di lavoro `Z:\TRIBUTE NATION\`. Mappa completa, pattern e regole di salvataggio in [[Materiali-NAS]].
