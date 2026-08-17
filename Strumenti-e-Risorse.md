@@ -51,7 +51,17 @@ Brevo — gestione consenso, privacy policy.
 - **`.claude/skills/spotlight/`**: ora file reale in questo repo (prima raggiungibile solo via junction NTFS verso `tribute-nation-kb`) — verificato con un clone pulito in una cartella temporanea: tutti i wikilink e gli script risolvono.
 - **`.claude/agents/`**: resta una junction locale verso `tribute-nation-kb` (agenti `tn-deploy-reviewer`, `tn-second-opinion`, dominio sito) — **esclusa da git qui** (`.gitignore`) per non duplicarla. Su questa macchina funziona comunque per comodità; da un clone pulito del vault, quegli agenti semplicemente non ci sono (corretto: non sono di questo dominio).
 - **`.gitignore`**: solo `.obsidian/` (stato locale dell'app, non contenuto).
-- 🔧 **Nessun sync automatico ancora**: `tribute-nation-kb` ha un task Windows che fa commit→pull→push ogni sera (vedi sotto); questo vault no. Se si continua a editare senza pushare a mano, il gap può riaprirsi. Da valutare con Vale se serve lo stesso automatismo qui.
+## Sync automatico giornaliero — `tribute-nation-vault`
+
+Task Windows `TributeNationVault-DailySync`, ogni giorno alle 22:10 (5 minuti dopo il sync di
+`tribute-nation-kb`, per non farli girare in contemporanea): script
+`C:\Users\vmann\Documents\tnkb-sync\vault-daily-sync.ps1` su questo vault. Stessa identica logica
+del sync di `tribute-nation-kb` (commit modifiche locali → pull → push, si ferma senza forzare in
+caso di conflitto). Log in `C:\Users\vmann\Documents\tnkb-sync\logs\` (prefisso `sync-vault-`).
+Testato manualmente il 2026-08-17, verde — ha anche beccato e corretto un `__pycache__/` finito
+per errore nel commit iniziale (aggiunto a `.gitignore`).
+
+🔧 Stessa limitazione dell'altro sync: gira solo se il PC è acceso alle 22:10.
 
 ## NAS
 
