@@ -1,6 +1,6 @@
 ---
 tags: [kb, calendario, editoriale, MARKETING]
-aggiornato: 2026-08-16
+aggiornato: 2026-08-17
 ---
 
 # Calendario Editoriale Settimanale
@@ -46,7 +46,7 @@ Calendario editoriale 13–28 giugno 2026 (settimana KoRnea + settimana Again), 
 | Data pubblicazione | Band |
 |---|---|
 | 19/08 | Desaparecidos |
-| 26/08 | Beernow + The Wonderwall (⚠️ due band sullo stesso mercoledì) |
+| 26/08 | Beernow |
 | 02/09 | Frøm Zerø |
 | 09/09 | Wild Berries |
 | 16/09 | Jar |
@@ -58,8 +58,7 @@ Calendario editoriale 13–28 giugno 2026 (settimana KoRnea + settimana Again), 
 
 **Beernow** e **Living Park** confermate da Vale (2026-08-16) come band nuove, non refusi — aggiunte al Band Tracker Notion (Stato 🔍 Da contattare, artista tributato/contatti ancora da completare).
 
-Da risolvere con Vale:
-- **26/08 — due band sullo stesso mercoledì** (Beernow e The Wonderwall): il calendario prevede un solo Spotlight a settimana. Vale ha confermato (2026-08-16) di tenere entrambe le entry su Notion per ora e decidere in seguito quale/come.
+**Risolto il 2026-08-17**: il doppio slot del 26/08 (Beernow + The Wonderwall) è stato sciolto spostando lo Spotlight The Wonderwall a **giovedì 20/08 pomeriggio come contenuto straordinario** (fuori dallo slot fisso del mercoledì, vedi [[Tone-of-Voice]] per il criterio di caption sui contenuti fuori programma), lasciando il 26/08 libero per il solo Beernow.
 
 ## Correzioni del 2026-06-21
 
