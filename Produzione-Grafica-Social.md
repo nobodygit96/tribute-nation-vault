@@ -1,6 +1,6 @@
 ---
 tags: [kb, grafica, produzione, social, tecnico, MARKETING]
-aggiornato: 2026-08-16
+aggiornato: 2026-08-17
 ---
 
 # Produzione Grafica Social
@@ -130,6 +130,16 @@ Ogni spotlight produce questo set di file (nomi verificati sul pacchetto Wonderw
 - `{Band}_Pacchetto.zip` — tutto compresso
 
 Emoji sempre rimosse dai PDF (font non le supportano), presenti invece nel `.md` per la pubblicazione IG.
+
+## Formato "statement card" (Spoiler Spotlight, B-Side, Dalla Nation per la Nation)
+
+Diverso dal carosello Spotlight a 9 slide: qui ogni slide è un blocco di testo centrato (nessun logo band), stesso sistema visivo (sfondo/font/colori/footer). Script dedicato `tools/spotlight/make_statement_slides.py` (riusa le funzioni di `make_slides.py`: sfondo, wrap, footer, font), config JSON per slide con lista di blocchi testo (font bebas/dmsans, size, colore, divider opzionale dopo). Supporta anche una progress bar in basso per i caroselli multi-slide (`progress_total`/`progress_index` nel config), come nel formato "Dalla Nation per la Nation".
+
+- **Spoiler Spotlight**: slide singola, cita solo la band **originale** (mai la tribute, vedi [[Tone-of-Voice]]), tipicamente due elementi identificativi (anno/luogo/titolo disco) più riga di chiusura "Domani lo Spotlight."
+- **B-Side**: slide singola, segue la formula in [[Calendario-Editoriale]] (dato inaspettato → pivot → chiusura verso la tribute italiana, riga finale rossa)
+- **Dalla Nation per la Nation**: carosello 5 slide con progress bar, salvato in `DALLA NATION PER LA NATION\<D_MM_YY>\` (solo cartella con PNG, niente zip duplicato — regola 4 di [[Materiali-NAS]])
+
+Verificato il 2026-08-17 sul pacchetto Desaparecidos (spoiler) / Soundgarden-Outshined (b-side) / community question (dalla nation, 21/08). 🔧 Attenzione accenti italiani nei config JSON: scrivere sempre il carattere accentato reale (è, à...) — un giro di prova aveva usato "e'" come placeholder ASCII per evitare problemi di encoding, non necessario: il font li supporta nativamente, va solo scritto il JSON con Write/Edit (non heredoc bash).
 
 ## Vedi anche
 
