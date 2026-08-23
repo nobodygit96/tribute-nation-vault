@@ -1,6 +1,6 @@
 ---
 tags: [kb, marketing, ai, meta, ads, bozza, MARKETING]
-aggiornato: 2026-08-23
+aggiornato: 2026-08-24
 ---
 
 # Team Marketing AI e Meta Ads — Ricerca e Bozza Operativa
@@ -62,8 +62,10 @@ Principio trasversale: **mai dati/numeri inventati** — qualunque agente che to
 - [ ] Costruire il Pubblico Personalizzato da interazioni FB/IG (365gg, gratis)
 - [ ] Formalizzare 2 buyer persona esplicite (band-tipo, locale-tipo) partendo dalla ricerca di mercato già fatta
 - [ ] Applicare la mappa impatto/sforzo alle 5 idee di sviluppo non decise in [[Strategia-Mercato-e-Sviluppo]]
-- [ ] Costruire l'agente Outreach con disciplina di follow-up sul Venue Tracker
-- [ ] Costruire l'agente Trovabilità/SEO per Storia del Rock
+- [ ] Costruire l'agente Outreach con disciplina di follow-up sul Venue Tracker (Fase 3, dopo conferma con Daniele)
+- [ ] Formalizzare la checklist di brand compliance (§7) prima di qualunque agente che pubblica (Fase 1)
+- [ ] Costruire l'agente Trovabilità/SEO partendo dai topic di §8 (Fase 2)
+- [ ] Costruire l'agente Metriche/Reporting (Fase 4, bloccato su GA4 attivo)
 - [ ] Coordinarsi con Daniele sullo sviluppo parallelo del team agenti
 - [ ] Decidere se/quando caricare il database Brevo come Custom Audience (richiede consenso già raccolto)
 
@@ -85,6 +87,78 @@ Principio trasversale: **mai dati/numeri inventati** — qualunque agente che to
 - Retargeting (ads a pagamento) vs remarketing (email via Brevo, già in uso) — distinguere sempre i due nella pianificazione.
 - Non essere aggressivi con target sensibili (es. locali in difficoltà economica) — testare il tono prima di scalare.
 
+## 6. Roadmap operativa e gap analysis (ricerca del 2026-08-24)
+
+### Cosa dicono le fonti 2026 (oltre ai 2 video già citati in §1)
+
+- **Prima si documenta il brand, poi si costruisce l'agente**: il processo standard parte da una documentazione di identità/tono già scritta, prima di dare in pasto qualunque cosa a un agente. TN questo passo lo ha già fatto: [[Tone-of-Voice]] e [[Identita-Visiva]] esistono, sono già la "knowledge base del brand" richiesta — non c'è da inventare nulla, solo collegarle esplicitamente a ogni agente/skill che genera contenuto pubblico.
+- **Una brand voice utile è specifica e "contrastiva"**: dice anche cosa NON è, non solo cosa è, con esempi concreti. [[Tone-of-Voice]] ha già questa forma nelle "Regole ferme" (zero em-dash, zero bullet nelle caption, zero frasi AI-sounding) — più vicino a un guardrail azionabile che a un semplice mood board, buon punto di partenza.
+- **Serve un passo di verifica/compliance prima della pubblicazione**, non solo un buon prompt iniziale: il contenuto generato va confrontato contro le regole del brand come step esplicito, non fidandosi che il modello "si ricordi" il tono per tutta la sessione.
+- **Su Claude Code specificamente**: `CLAUDE.md` + skill è già il meccanismo di orchestrazione, non serve un orchestratore esterno — conferma la strada già proposta in §1 (routing skill-vs-agente). I subagenti supportano ora anche l'annidamento (un agente che ne lancia altri, fino a profondità 5) — utile in futuro se un agente Content dovesse delegare a un sub-check di brand compliance invece di fare tutto in un prompt monolitico.
+- **Meglio pochi strumenti ben integrati che tanti scollegati** (3-5 con scambio dati pulito battono una collezione di tool isolati) — coerente con quanto già segnalato da `tnkb brief` sul sito (24 snippet relitti mai ripuliti): vale la stessa logica per il team di agenti, non solo per il codice.
+
+### Gap analysis — cosa manca per procedere, e da dove recuperarlo
+
+| Cosa manca | Serve da | Blocca |
+|---|---|---|
+| Regole di routing skill-vs-agente in `CLAUDE.md` | Scrittura diretta — criterio già chiaro: comando meccanico → skill, giudizio ripetuto → agente | Tutto il resto: senza routing esplicito un nuovo agente/skill rischia di sovrapporsi o non attivarsi mai |
+| Un passo di "brand compliance check" esplicito, oggi implicito (Vale rilegge a occhio) | Formalizzare le "Regole ferme" di [[Tone-of-Voice]] come checklist eseguibile (§7 sotto) | Qualunque agente che pubblica contenuto senza supervisione — oggi va bene perché Vale rilegge sempre, non scala se il volume aumenta |
+| Stato dello sviluppo parallelo di Daniele | Chiedere direttamente a Daniele | Formalizzare in KB una struttura definitiva, per non duplicare o contraddire scelte già sue |
+| Accesso GA4/Search Console per l'agente Metriche/Reporting | Login Google di Vale — stessa dipendenza di [[Integrazione-Google-GTM-GA4-Search-Console]] | L'agente Metriche/Reporting non ha dati reali su cui lavorare finché GA4 non è attivo |
+| Decisione di Vale su quale agente costruire per primo | Priorità esplicita di Vale | L'ordine delle fasi sotto è una proposta, non è ancora decisa |
+
+### Come propongo di gestirlo (fasi, non tutto insieme)
+
+1. **Fase 0 — routing in `CLAUDE.md`.** Prerequisito tecnico di tutto il resto, zero dipendenze esterne.
+2. **Fase 1 — guardrail di brand come checklist esplicita** (§7). Rischio più basso, protegge la cosa non negoziabile del progetto (il tono di voce), serve a ogni agente successivo — conviene farla prima di costruire qualunque agente che pubblica.
+3. **Fase 2 — agente Trovabilità/SEO.** Meno dipendenze esterne (non serve GA4, non serve coordinarsi con Daniele), output verificabile subito: i topic di §8 sono il primo banco di prova concreto.
+4. **Fase 3 — agente Outreach** sul Venue Tracker, una volta chiarito con Daniele se si sovrappone al suo sviluppo.
+5. **Fase 4 — agente Metriche/Reporting**, bloccato su GA4 attivo (dipendenza diretta da [[Integrazione-Google-GTM-GA4-Search-Console]]).
+6. **Media Buyer resta in fondo**: campagne esistenti minime (€49,85 totali), non è priorità finché il volume non lo giustifica.
+
+Un agente alla volta, validato su output reale prima di passare al successivo — stesso principio già confermato per `/spotlight` (costruita da materiale reale approvato, non da zero).
+
+## 7. Guardrail di brand per gli agenti (non negoziabili)
+
+Le "Regole ferme" di [[Tone-of-Voice]], trasformate in checklist che qualunque agente/skill che genera contenuto pubblico deve rispettare prima della consegna a Vale:
+
+- [ ] Zero em-dash (—) nel testo finale
+- [ ] Zero bullet point nelle caption
+- [ ] Nessuna frase "AI-sounding" (frammenti slegati, tono istituzionale, liste informative al posto di narrazione)
+- [ ] Citazioni solo da materiale intervista reale, mai inventate o parafrasate come dirette
+- [ ] Palette/font rispettati in ogni asset grafico ([[Identita-Visiva]]): `#0A0A0A`/`#CC2200`/bianco, Bebas Neue + DM Sans Variable, 🤘 come firma
+- [ ] Struttura articolo rispettata quando applicabile (apertura aneddotica, H2 non tutto maiuscolo, chiusura con saluto/frase della band)
+- [ ] "Tu/voi", mai il "lei" istituzionale
+
+Non sostituisce la rilettura di Vale — è un primo filtro meccanico prima che un contenuto le arrivi, pensato per la Fase 1 sopra.
+
+## 8. Topic per nuovi articoli — "Storia del Rock" (bozza da validare)
+
+> Non ancora un contenuto attivo nel [[Calendario-Editoriale]]: è il criterio editoriale di [[Strategia-Mercato-e-Sviluppo]] ("Storia del Rock come risposta a domande reali", da Neil Patel) applicato a proposte concrete. Nessuno di questi articoli esiste ancora — sono candidati, da scrivere solo con fonti verificate, mai a memoria.
+
+Topic scelti per collegarsi a tribute band già nel roster TN (spotlight pubblicati o pagina sito), per permettere link interni reali invece di articoli isolati:
+
+| Domanda reale (stile ricerca) | Genere/contesto | Collegamento roster TN |
+|---|---|---|
+| Perché i Nirvana e il grunge di Seattle hanno cambiato il rock per sempre? | Grunge | Genere coperto da 4 band nel roster |
+| Qual è la differenza tra hard rock, heavy metal e nu metal? | Metal/Nu Metal | KoRnea (Korn), Disasterpiece (Slipknot) |
+| Perché i Rage Against the Machine restano un riferimento politico nel rock? | Rock politico/Alternative | RATS |
+| Come sono nati gli Alice in Chains e perché il grunge non è solo Nirvana? | Grunge | Again |
+| Qual è la storia dei Black Sabbath e perché sono i padri del metal? | Heavy Metal | Mr. Crowley (Ozzy/Black Sabbath) |
+| Perché il Britpop degli anni '90 è ancora amato oggi (Oasis vs Blur)? | Britpop | Supersonic Show / Wonderwall (Oasis) |
+| Cos'è successo ai Guns N' Roses tra Use Your Illusion e la reunion? | Hard Rock | Paradise Roses |
+| Perché i Rammstein dividono il pubblico tra spettacolo e controversia? | Industrial Metal | Flammen |
+| Come è nato il nu metal e perché Korn e Limp Bizkit restano rilevanti? | Nu Metal | KoRnea, KissMyStarfish |
+| Cosa rende Soundgarden e il progetto Temple of the Dog unici nella storia grunge? | Grunge | Outshined |
+| Perché i Ghost mescolano teatro, horror e metal (e perché funziona)? | Metal teatrale | Eponymous |
+| Qual è la storia degli U2 e perché restano la band stadio per eccellenza? | Rock/Stadium | Sound of Existence |
+| Come si è evoluto il metalcore/post-hardcore con band come A Day To Remember? | Metalcore | 2nd Sucks |
+| Il Britpop revival di oggi: cosa lo lega davvero agli anni '90? | Britpop | Wonderwall (pagina sito, no spotlight ancora) |
+| Perché il "nuovo corso" dei Bring Me the Horizon divide i fan metalcore? | Metalcore/Alternative | Sleepwalkers (citata in 2nd Sucks) |
+| Come si organizza una serata/contest tribute band in Italia (guida pratica)? | Servizio/Locali | Non lega a una band, lega ai [[Venue-Tracker]] — utile per outreach locali |
+
+Nota di processo: ogni articolo va scritto solo dopo verifica reale delle fonti storiche (mai a memoria del modello) — stesso principio già fermo per il §2 di questa nota ("mai dati/numeri inventati").
+
 ## Vedi anche
 
 - [[Strategia-Mercato-e-Sviluppo]]
@@ -92,3 +166,6 @@ Principio trasversale: **mai dati/numeri inventati** — qualunque agente che to
 - [[Stato-e-Roadmap]]
 - [[Venue-Tracker]]
 - [[Integrazione-Google-GTM-GA4-Search-Console]]
+- [[Tone-of-Voice]]
+- [[Identita-Visiva]]
+- [[Pipeline-Contenuti-e-Roster]]

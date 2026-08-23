@@ -1,6 +1,6 @@
 ---
 tags: [kb, pipeline, roster, contenuti, MARKETING]
-aggiornato: 2026-08-16
+aggiornato: 2026-08-24
 ---
 
 # Pipeline Contenuti e Roster
@@ -82,3 +82,4 @@ La domanda 8 spiega la slide "Tribute to Tribute" (nuovo nome dal 2026-08-16, pr
 - [[Identita-Visiva]] — standard grafici da rispettare in ogni asset
 - [[Stato-e-Roadmap]] — cosa è in coda
 - [[Materiali-NAS]] — dove trovare foto/loghi/pacchetti spotlight di ogni band
+- [[Team-Marketing-AI-e-Meta-Ads]] §8 — bozza di 16 topic per "Storia del Rock", collegati al roster sopra, ancora da validare
