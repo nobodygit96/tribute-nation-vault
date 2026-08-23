@@ -25,7 +25,7 @@ Brevo — gestione consenso, privacy policy.
 > Verificato direttamente da browser (Business Suite/Ads Manager) il 2026-08-23.
 
 - **Business Manager**: esiste, portfolio business `_tribute_nation_`. Persone con accesso completo: Pagina "Tribute Nation" e account collegato `@_tribute_nation_` (quest'ultimo segnalato "Non attivo/a" — Passkey non attivata).
-- **Un solo account pubblicitario**: "Tribute Nation" (ID `1548998116564966`, riferimento `act=2429131157229173` nelle URL di Ads Manager).
+- **Due account pubblicitari** (corretto il 2026-08-23, prima si pensava fossero lo stesso account con due nomi): "Tribute Nation" (ID `1548998116564966`, mai usato per campagne reali) e `2429131157229173` (quello con tutte le 5 campagne storiche sotto). Quest'ultimo **non era mai stato un asset del BM** — amministrato solo a livello di profilo personale di Vale, causa reale per cui nessun pixel/dataset del BM era mai selezionabile per i Pubblici Personalizzati creati da lì. **Migrato ("reclamato") nel BM `_tribute_nation_` il 2026-08-23** — azione irreversibile, accesso personale di Vale preservato automaticamente.
 - **5 campagne storiche** (tutte "boost" di post esistenti, nessuna a obiettivo conversione/lead), spesa totale ≈ €49,85:
 
 | Campagna | Obiettivo | Fine | Budget | Speso | Risultati | Costo/risultato | Impression | CPM |
@@ -36,8 +36,8 @@ Brevo — gestione consenso, privacy policy.
 | Post: "Quante volte hai sentito dire..." | Interazione con il post | 10/07/2026 | €1/g | €5,69 | 574 | €0,01 | 10.432 | €0,55 |
 | Post: "OGGI LA NATION CAMBIA PELLE" | Clic sul link | 17/08/2026 | €2/g | €13,96 | 276 | €0,05 | 20.642 | €0,68 |
 
-- **Pixel Meta: NON installato** — Gestione eventi risulta senza dataset/origine dati collegata ("Nessuna origine dei dati"). Da non dare per scontato in futuro: era stato inizialmente riferito come "già esistente", la verifica diretta ha smentito.
-- **Dominio tributenation.it: NON verificato** su Business Manager ("Nessun dominio aggiunto").
+- **Pixel Meta: installato e funzionante** — dataset "TributeNation" (ID 1034973242374407) attivo su tributenation.it, riceve eventi in tempo reale via Meta Pixel + Conversions API. Essere nello stesso BM non basta: il dataset va condiviso esplicitamente asset per asset (scheda "Risorse collegate" del dataset) — fatto anche questo il 2026-08-23 per `act=2429131157229173`, confermato funzionante creando un Pubblico Personalizzato di prova.
+- **Dominio tributenation.it: Verificato** su Business Manager (2026-08-23) — meta-tag `facebook-domain-verification` inserito via Code Snippet sul sito (revisionato da `tn-deploy-reviewer`), cache svuotata, scraping Meta forzato via Sharing Debugger Tool.
 - Follower al 2026-08-23 (dalla Pagina): Facebook 180, Instagram 649 — più aggiornato dello snapshot di luglio 2026 in [[Stato-e-Roadmap]] (154/400), che resta comunque valido come riferimento storico.
 
 ## Notion MCP

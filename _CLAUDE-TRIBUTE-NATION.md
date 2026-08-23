@@ -28,6 +28,7 @@ aggiornato: 2026-08-16
 | [[Strategia-Mercato-e-Sviluppo]] | Diagnosi strategica, ricerca di mercato, idee di sviluppo prodotto (non decise) |
 | [[Strumenti-e-Risorse]] | CMS, Canva, Notion MCP, email marketing, storage |
 | [[Team-Marketing-AI-e-Meta-Ads]] | 🔧 Bozza: ricerca su team di agenti AI dedicati e gestione Meta Ads (BM/Pixel/retargeting), da verificare e decidere passo passo |
+| [[Integrazione-Google-GTM-GA4-Search-Console]] | ⏸️ Roadmap e checklist pronte, non ancora iniziata: GTM, GA4, Search Console — in attesa di accessi/decisioni da Vale |
 | [[Materiali-NAS]] | Mappa cartelle NAS (Z:\), pattern materiali band/venue, regole di salvataggio |
 | [[Stack-Tecnico-Sito]] | WordPress, pagine, admin, CSS, calendario eventi (per lo più 🔧 da completare) |
 | [[Regole-Operative-Claude]] | Golden rules, note tecniche slide, errori noti da non ripetere |

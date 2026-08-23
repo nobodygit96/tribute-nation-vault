@@ -9,16 +9,16 @@ aggiornato: 2026-08-23
 
 > ⚠️ **Nota di stato**: questa è una raccolta di idee/indicazioni da fonti esterne (5 video, sessione del 2026-08-23), non ancora tutta verificata o decisa. Non è la "verità compilata" nel senso pieno delle altre note KB — va trattata come backlog da lavorare passo passo. **Integrazione rimandata** con lo sviluppo parallelo di Daniele su agenti/skill (vedi [[Strumenti-e-Risorse]] per l'architettura `.claude/agents` e `.claude/skills` esistente). Fonti: video di Veronica Gentili (Business Manager, Lead Ads, Pixel/Retargeting/Pubblici Personalizzati), Neil Patel (strategia di ricerca multi-canale 2026), Giovanni Beggiato e Grace Leung (team di agenti AI in Claude Code).
 
-## ✅ Verificato da browser il 2026-08-23 (dettagli completi in [[Strumenti-e-Risorse]])
+## ✅ Verificato/risolto da browser il 2026-08-23 (dettagli completi in [[Strumenti-e-Risorse]])
 
-- **Business Manager**: esiste davvero, un solo account pubblicitario "Tribute Nation".
+- **Business Manager**: esiste davvero. **Causa reale del problema "pixel non selezionabile nei Pubblici Personalizzati"**: l'account pubblicitario `2429131157229173` (quello usato per tutte le campagne reali) non era mai stato un asset del BM `_tribute_nation_` — era amministrato solo a livello di profilo personale di Vale. Confermato con tre controlli indipendenti, poi **migrato nel BM** ("reclamato", azione irreversibile) e **ricollegato al dataset reale** (essere nello stesso BM non basta, va condiviso esplicitamente asset per asset). Verificato funzionante creando un Pubblico Personalizzato di prova ("Visitatori sito web 180gg - TributeNation") dal dataset reale.
 - **5 campagne storiche**, tutte "boost" di post esistenti (follow, visita profilo, interazione, clic sul link) — **nessuna campagna a obiettivo conversione/lead**, spesa totale ≈ €49,85. Nessun uso di retargeting o pubblici personalizzati finora: tutte le campagne hanno usato targeting broad/di default, non pubblici basati su pixel o interazioni pregresse.
-- **Pixel Meta: NON installato** (contrariamente a quanto riferito inizialmente) — Gestione eventi non ha nessuna origine dati collegata.
-- **Dominio tributenation.it: NON verificato** su Business Manager.
+- **Pixel Meta: installato e funzionante** — dataset "TributeNation" attivo, riceve eventi in tempo reale, ora collegato anche all'account pubblicitario usato per le campagne.
+- **Dominio tributenation.it: Verificato** su Business Manager (meta-tag inserito via Code Snippet sul sito, revisionato da `tn-deploy-reviewer` prima dell'attivazione, cache svuotata, scraping Meta forzato via Sharing Debugger Tool).
 
 ## 🔧 Ancora da verificare
 
-- **Stato reale GA4**: la KB lo segnala come non attivo ([[Strategia-Mercato-e-Sviluppo]]) — richiede login Google separato, non controllato in questa sessione.
+- **GA4, GTM, Search Console**: nessuno dei tre attivo sul sito (confermato da browser). Roadmap e checklist operativa pronte in nota dedicata: [[Integrazione-Google-GTM-GA4-Search-Console]] — in attesa di accessi/decisioni da Vale.
 - A che punto è lo sviluppo di Daniele sul team di agenti marketing (vedi nota progetto in memoria Claude, non in questa KB).
 
 > **Lezione da questa sessione**: un'informazione riferita a voce ("BM e Pixel ci sono già") si è rivelata solo parzialmente vera alla verifica diretta (BM sì, Pixel no). Buona pratica confermata: verificare da browser prima di pianificare su stati non controllati direttamente, specialmente quando cambiano le priorità a valle.
@@ -55,9 +55,9 @@ Principio trasversale: **mai dati/numeri inventati** — qualunque agente che to
 ## 3. To-do list di implementazione
 
 - [x] ~~Verificare dettagli reali di BM, Pixel e campagne Meta già fatte~~ — fatto 2026-08-23, vedi [[Strumenti-e-Risorse]]
-- [ ] Verificare stato reale GA4
-- [ ] **Installare il Pixel Meta** su tributenation.it — non è "verificare", è da fare da zero
-- [ ] **Verificare il dominio** tributenation.it via BM — non è "verificare", è da fare da zero
+- [x] ~~Migrare l'account pubblicitario nel BM e ricollegare il dataset~~ — fatto 2026-08-23
+- [x] ~~Verificare il dominio tributenation.it via BM~~ — fatto 2026-08-23
+- [ ] Procedere con l'integrazione Google (GTM, GA4, Search Console) — roadmap pronta in [[Integrazione-Google-GTM-GA4-Search-Console]], serve login/decisioni di Vale
 - [ ] Scrivere le regole di routing skill-vs-agente in `CLAUDE.md`
 - [ ] Costruire il Pubblico Personalizzato da interazioni FB/IG (365gg, gratis)
 - [ ] Formalizzare 2 buyer persona esplicite (band-tipo, locale-tipo) partendo dalla ricerca di mercato già fatta
@@ -91,3 +91,4 @@ Principio trasversale: **mai dati/numeri inventati** — qualunque agente che to
 - [[Strumenti-e-Risorse]]
 - [[Stato-e-Roadmap]]
 - [[Venue-Tracker]]
+- [[Integrazione-Google-GTM-GA4-Search-Console]]
