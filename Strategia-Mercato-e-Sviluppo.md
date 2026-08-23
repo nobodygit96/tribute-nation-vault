@@ -1,6 +1,6 @@
 ---
 tags: [kb, strategia, mercato, roadmap-prodotto, MARKETING, WEB]
-aggiornato: 2026-08-16
+aggiornato: 2026-08-23
 ---
 
 # Strategia, Mercato e Idee di Sviluppo
@@ -52,6 +52,14 @@ Le band restano **gratuite, sempre** — promessa scritta nel copy pubblico, da 
 4. **Matching band↔locale onesto**: indicatori semplici ("date libere" / "serate da coprire"), gestiti a mano da Nobody all'inizio, non un marketplace automatico (troppo pochi numeri oggi per reggerlo).
 
 5. **Pacchetto a pagamento per i locali** (mai per le band): unica via di monetizzazione compatibile con la promessa di gratuità.
+
+## Istruzioni aggiuntive sui contenuti
+
+> Fonte: video "The Only Marketing Strategy That Is Working In 2026" (Neil Patel, YouTube, 12/08/2026), applicato a TN il 2026-08-23. A differenza della lista sopra, questa non è un'idea di prodotto da decidere: è un criterio editoriale da applicare già ai contenuti in produzione.
+
+- **Lo Spotlight settimanale va trattato come contenuto-madre multi-formato**: stessa storia/materiale adattato a più superfici (sito, Instagram, eventuale video), non contenuti scollegati tra loro — Google indicizza già i post social come risultati di ricerca (Search Console "Platform Properties"), quindi le caption non sono "solo social".
+- **Storia del Rock e articoli lunghi vanno scritti come risposta a domande reali** (es. "dove suona [banda]", "tribute band [artista] [città]"), non solo come contenuto culturale — le AI (ChatGPT, AI Overview) citano risposte complete e specifiche, non contenuti generici, e i backlink tradizionali contano quasi nulla rispetto alle menzioni.
+- **L'outreach verso locali/community vale anche come leva di visibilità AI**, non solo di business: più TN viene nominato da locali/blog musicali, più probabile che un'AI lo citi come risposta a "come trovo/organizzo tribute band in Italia" — nessuna azione nuova, solo tenerlo presente nel copy dell'outreach già in corso.
 
 ## Idee scartate consapevolmente
 

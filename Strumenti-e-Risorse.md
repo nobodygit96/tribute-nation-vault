@@ -1,6 +1,6 @@
 ---
 tags: [kb, strumenti, tools, MARKETING, WEB]
-aggiornato: 2026-08-16
+aggiornato: 2026-08-23
 ---
 
 # Strumenti e Risorse
@@ -19,6 +19,26 @@ WordPress + Elementor + tema Astra + Yoast SEO, hosting Aruba. (dettagli tecnici
 ## Email marketing
 
 Brevo — gestione consenso, privacy policy.
+
+## Meta Ads
+
+> Verificato direttamente da browser (Business Suite/Ads Manager) il 2026-08-23.
+
+- **Business Manager**: esiste, portfolio business `_tribute_nation_`. Persone con accesso completo: Pagina "Tribute Nation" e account collegato `@_tribute_nation_` (quest'ultimo segnalato "Non attivo/a" — Passkey non attivata).
+- **Un solo account pubblicitario**: "Tribute Nation" (ID `1548998116564966`, riferimento `act=2429131157229173` nelle URL di Ads Manager).
+- **5 campagne storiche** (tutte "boost" di post esistenti, nessuna a obiettivo conversione/lead), spesa totale ≈ €49,85:
+
+| Campagna | Obiettivo | Fine | Budget | Speso | Risultati | Costo/risultato | Impression | CPM |
+|---|---|---|---|---|---|---|---|---|
+| [07/06/2026] Promozione di TributeNation | Follow/Mi piace | 11/06/2026 | €2/g | €7,88 | 53 | €0,15 | 4.792 | €1,64 |
+| Post di Instagram | Visita profilo IG | 16/06/2026 | €2/g | €8,57 | 242 | €0,04 | 5.963 | €1,44 |
+| Post di Instagram: Dalla Nation, per la Nation | Visita profilo IG | 03/07/2026 | €2/g | €13,75 | 324 | €0,04 | 6.081 | €2,26 |
+| Post: "Quante volte hai sentito dire..." | Interazione con il post | 10/07/2026 | €1/g | €5,69 | 574 | €0,01 | 10.432 | €0,55 |
+| Post: "OGGI LA NATION CAMBIA PELLE" | Clic sul link | 17/08/2026 | €2/g | €13,96 | 276 | €0,05 | 20.642 | €0,68 |
+
+- **Pixel Meta: NON installato** — Gestione eventi risulta senza dataset/origine dati collegata ("Nessuna origine dei dati"). Da non dare per scontato in futuro: era stato inizialmente riferito come "già esistente", la verifica diretta ha smentito.
+- **Dominio tributenation.it: NON verificato** su Business Manager ("Nessun dominio aggiunto").
+- Follower al 2026-08-23 (dalla Pagina): Facebook 180, Instagram 649 — più aggiornato dello snapshot di luglio 2026 in [[Stato-e-Roadmap]] (154/400), che resta comunque valido come riferimento storico.
 
 ## Notion MCP
 
