@@ -1,6 +1,6 @@
 ---
 tags: [kb, strumenti, tools, MARKETING, WEB]
-aggiornato: 2026-08-23
+aggiornato: 2026-08-25
 ---
 
 # Strumenti e Risorse
@@ -25,8 +25,9 @@ Brevo — gestione consenso, privacy policy.
 > Verificato direttamente da browser (Business Suite/Ads Manager) il 2026-08-23.
 
 - **Business Manager**: esiste, portfolio business `_tribute_nation_`. Persone con accesso completo: Pagina "Tribute Nation" e account collegato `@_tribute_nation_` (quest'ultimo segnalato "Non attivo/a" — Passkey non attivata).
-- **Due account pubblicitari** (corretto il 2026-08-23, prima si pensava fossero lo stesso account con due nomi): "Tribute Nation" (ID `1548998116564966`, mai usato per campagne reali) e `2429131157229173` (quello con tutte le 5 campagne storiche sotto). Quest'ultimo **non era mai stato un asset del BM** — amministrato solo a livello di profilo personale di Vale, causa reale per cui nessun pixel/dataset del BM era mai selezionabile per i Pubblici Personalizzati creati da lì. **Migrato ("reclamato") nel BM `_tribute_nation_` il 2026-08-23** — azione irreversibile, accesso personale di Vale preservato automaticamente.
-- **5 campagne storiche** (tutte "boost" di post esistenti, nessuna a obiettivo conversione/lead), spesa totale ≈ €49,85:
+- **Due account pubblicitari** (corretto il 2026-08-23, prima si pensava fossero lo stesso account con due nomi): "Tribute Nation" (ID `1548998116564966`) e `2429131157229173`. Quest'ultimo **non era mai stato un asset del BM** — amministrato solo a livello di profilo personale di Vale, causa reale per cui nessun pixel/dataset del BM era mai selezionabile per i Pubblici Personalizzati creati da lì. **Migrato ("reclamato") nel BM `_tribute_nation_` il 2026-08-23** — azione irreversibile, accesso personale di Vale preservato automaticamente.
+- ⚠️ **Correzione del 2026-08-25**: l'affermazione precedente che `1548998116564966` fosse "mai usato per campagne reali" era sbagliata — dedotta dalle impostazioni business, mai verificata aprendo davvero Gestione inserzioni per quell'account. Ha in realtà **6 campagne**, vedi tabella sotto.
+- **5 campagne storiche su `2429131157229173`** (tutte "boost" di post esistenti, nessuna a obiettivo conversione/lead), spesa ≈ €49,85:
 
 | Campagna | Obiettivo | Fine | Budget | Speso | Risultati | Costo/risultato | Impression | CPM |
 |---|---|---|---|---|---|---|---|---|
@@ -35,6 +36,17 @@ Brevo — gestione consenso, privacy policy.
 | Post di Instagram: Dalla Nation, per la Nation | Visita profilo IG | 03/07/2026 | €2/g | €13,75 | 324 | €0,04 | 6.081 | €2,26 |
 | Post: "Quante volte hai sentito dire..." | Interazione con il post | 10/07/2026 | €1/g | €5,69 | 574 | €0,01 | 10.432 | €0,55 |
 | Post: "OGGI LA NATION CAMBIA PELLE" | Clic sul link | 17/08/2026 | €2/g | €13,96 | 276 | €0,05 | 20.642 | €0,68 |
+
+- **6 campagne su `1548998116564966`, trovate il 2026-08-25** (mai controllate prima in Gestione inserzioni): 4 non attivate/mai spese (IMAGINAERUM 12 LUGLIO, New Notorietà Campaign, Disasterpiece, Start_maggio_2026) più due reali:
+
+| Campagna | Obiettivo | Periodo | Speso | Risultati |
+|---|---|---|---|---|
+| REMARKETING - INSTAGRAM (gruppo di inserzioni di "REMARKETING ENGAGEMENT FAN - Copia") | Visite al profilo Instagram | 31/07/2026 – 09/08/2026 | €47,28 | 716 — 20.391 impression, 10.129 copertura |
+| REMARKETING ENGAGEMENT FAN | Interazione con il post | — | €0,00 | — |
+
+Nonostante il nome "Remarketing" il targeting reale è **Advantage+ automatico su un pubblico ampio** (stima 835.600–983.100 persone), non una vera lista di Pubblico Personalizzato — verificato aprendo il gruppo di inserzioni in modifica (nessuna sezione "Pubblico personalizzato", solo dimensione stimata). Identità corretta anche qui: Pagina "TributeNation" + Instagram `@_tribute_nation_`, stessa di tutte le altre campagne verificate.
+
+**Spesa totale reale nota ora**: ≈ €97,13 (€49,85 + €47,28) tra i due account — nessuna delle due cifre includeva l'altro finché non verificato oggi.
 
 - **Pixel Meta: installato e funzionante** — dataset "TributeNation" (ID 1034973242374407) attivo su tributenation.it, riceve eventi in tempo reale via Meta Pixel + Conversions API. Essere nello stesso BM non basta: il dataset va condiviso esplicitamente asset per asset (scheda "Risorse collegate" del dataset) — fatto anche questo il 2026-08-23 per `act=2429131157229173`, confermato funzionante creando un Pubblico Personalizzato di prova.
 - **Dominio tributenation.it: Verificato** su Business Manager (2026-08-23) — meta-tag `facebook-domain-verification` inserito via Code Snippet sul sito (revisionato da `tn-deploy-reviewer`), cache svuotata, scraping Meta forzato via Sharing Debugger Tool.
