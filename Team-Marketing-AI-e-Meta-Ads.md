@@ -1,6 +1,6 @@
 ---
 tags: [kb, marketing, ai, meta, ads, bozza, MARKETING]
-aggiornato: 2026-08-24
+aggiornato: 2026-08-25
 ---
 
 # Team Marketing AI e Meta Ads — Ricerca e Bozza Operativa
@@ -15,6 +15,7 @@ aggiornato: 2026-08-24
 - **5 campagne storiche**, tutte "boost" di post esistenti (follow, visita profilo, interazione, clic sul link) — **nessuna campagna a obiettivo conversione/lead**, spesa totale ≈ €49,85. Nessun uso di retargeting o pubblici personalizzati finora: tutte le campagne hanno usato targeting broad/di default, non pubblici basati su pixel o interazioni pregresse.
 - **Pixel Meta: installato e funzionante** — dataset "TributeNation" attivo, riceve eventi in tempo reale, ora collegato anche all'account pubblicitario usato per le campagne.
 - **Dominio tributenation.it: Verificato** su Business Manager (meta-tag inserito via Code Snippet sul sito, revisionato da `tn-deploy-reviewer` prima dell'attivazione, cache svuotata, scraping Meta forzato via Sharing Debugger Tool).
+- **Dubbio di Vale sul 2026-08-25: "account pubblicitario sbagliato collegato a Instagram" — non confermato.** Controllato da tre angolazioni: (1) Impostazioni business → Account Instagram: un solo account (`@_tribute_nation_`), unica risorsa collegata è la Pagina Facebook "TributeNation", nessun account pubblicitario elencato; (2) "Risorse collegate" di entrambi gli account pubblicitari (`1548998116564966` e `2429131157229173`): nessuno dei due mostra risorse collegate, quindi nessun legame diretto Instagram↔account pubblicitario nel grafo asset del BM; (3) anteprima reale delle due inserzioni "Post di Instagram" storiche (Gestione inserzioni, account `2429131157229173`): entrambe mostrano correttamente l'identità `TributeNation`/`@_tribute_nation_`. Nessun errore trovato nei punti controllati — se il dubbio nasce da una schermata specifica (es. impostazioni native dell'app Instagram, non controllabili da qui), va indicata per un controllo mirato.
 
 ## 🔧 Ancora da verificare
 
