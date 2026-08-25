@@ -30,7 +30,7 @@ FONT_DIR = os.path.join(SCRIPT_DIR, "fonts")
 pdfmetrics.registerFont(TTFont("Bebas", os.path.join(FONT_DIR, "BebasNeue-Regular.ttf")))
 pdfmetrics.registerFont(TTFont("DMSans", os.path.join(FONT_DIR, "dmsans_variable.ttf")))
 
-# Logo TN versionato nel repo (assets/), non sul NAS — funziona su qualunque macchina.
+# Logo TN versionato nel repo (assets/), non sul NAS: funziona su qualunque macchina.
 LOGO = os.path.join(SCRIPT_DIR, "assets", "LOGO_ORIZZONTALE_RED.png")
 FOOTER_LEFT = "@_tribute_nation_  ·  www.tributenation.it"
 MARGIN = 70
@@ -125,7 +125,7 @@ def strip_emoji(text):
 def build_caption_pdf(md_path, out_path, band_name):
     with open(md_path, encoding="utf-8") as f:
         raw_blocks = [b.strip() for b in f.read().split("\n\n") if b.strip()]
-    story = [Paragraph(f"{band_name.upper()} — CAPTION SPOTLIGHT", caption_title_style), divider()]
+    story = [Paragraph(f"{band_name.upper()}: CAPTION SPOTLIGHT", caption_title_style), divider()]
     for block in raw_blocks:
         clean = strip_emoji(block)
         if not clean:

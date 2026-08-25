@@ -40,8 +40,8 @@ FONT_DIR = os.path.join(SCRIPT_DIR, "fonts")
 BEBAS = os.path.join(FONT_DIR, "BebasNeue-Regular.ttf")
 DMSANS = os.path.join(FONT_DIR, "dmsans_variable.ttf")
 
-# Logo TN per il footer: versionato nel repo (assets/), non sul NAS —
-# così lo script funziona identico su qualunque macchina senza Z:\ mappato.
+# Logo TN per il footer: versionato nel repo (assets/), non sul NAS.
+# Così lo script funziona identico su qualunque macchina senza Z:\ mappato.
 LOGO_TN = os.path.join(SCRIPT_DIR, "assets", "LOGO_ORIZZONTALE_RED.png")
 
 PAD = 90
@@ -186,7 +186,7 @@ def closing_slide(filename, logo_path, band_logo_w, tag, quote, body, cta):
     print("saved", filename)
 
 
-def cover_slide(filename, photo_path, logo_path, band_logo_w, band_name):
+def cover_slide(filename, photo_path, logo_path, band_logo_w, band_name, center_pct=0.72, show_band_name=True):
     photo = Image.open(photo_path).convert("RGB")
     scale = max(W / photo.width, H / photo.height)
     photo = photo.resize((int(photo.width * scale), int(photo.height * scale)), Image.LANCZOS)
@@ -215,21 +215,27 @@ def cover_slide(filename, photo_path, logo_path, band_logo_w, band_name):
     ratio = band_logo_w / logo.width
     logo = logo.resize((band_logo_w, int(logo.height * ratio)), Image.LANCZOS)
 
-    name_font = bebas(72)
-    name_up = band_name.upper()
-    nb = draw.textbbox((0, 0), name_up, font=name_font)
-    name_h = nb[3] - nb[1]
-    gap = 22
+    if show_band_name:
+        name_font = bebas(72)
+        name_up = band_name.upper()
+        nb = draw.textbbox((0, 0), name_up, font=name_font)
+        name_h = nb[3] - nb[1]
+        gap = 22
+        total_h = logo.height + gap + name_h
+    else:
+        gap = 0
+        name_h = 0
+        total_h = logo.height
 
-    total_h = logo.height + gap + name_h
-    top = int(H * 0.72 - total_h / 2)
+    top = int(H * center_pct - total_h / 2)
 
     x = (W - logo.width) // 2
     img.paste(logo, (x, top), logo)
 
-    name_y = top + logo.height + gap
-    nw = nb[2] - nb[0]
-    draw.text(((W - nw) / 2, name_y), name_up, font=name_font, fill=WHITE)
+    if show_band_name:
+        name_y = top + logo.height + gap
+        nw = nb[2] - nb[0]
+        draw.text(((W - nw) / 2, name_y), name_up, font=name_font, fill=WHITE)
 
     img.convert("RGB").save(filename)
     print("saved", filename)
@@ -252,6 +258,8 @@ def main():
         cover_slide(
             os.path.join(cfg["output_dir"], f"{slug}_slide{idx}_cover.png"),
             cfg["cover_photo_path"], logo_path, 390, cfg["band_name"],
+            center_pct=cfg.get("cover_vertical_center", 0.72),
+            show_band_name=cfg.get("cover_show_band_name", True),
         )
         idx += 1
     else:

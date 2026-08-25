@@ -47,7 +47,7 @@ Utile prima di iniziare il lavoro su uno spotlight: controllare se il pacchetto 
 | Data | Band | Pacchetto spotlight sul NAS |
 |---|---|---|
 | 19/08 | Desaparecidos | ✅ già in `Spotlight\` |
-| 26/08 | Beernow | ❌ solo materiale grezzo (2 foto + logo) |
+| 26/08 | Beernow | ✅ pacchetto completo in `Spotlight\` (`Beernow_Pacchetto.zip` + file singoli: Articolo md/HTML/PDF, Caption md/PDF, logo, 9 slide), prodotto e verificato il 2026-08-25. Caricato su Drive (`Approvazioni Spotlight\Beernow\`) |
 | 20/08 (spostato dal 26/08, straordinario) | The Wonderwall | ✅ pacchetto completo in `Spotlight\` (`Wonderwall_Pacchetto.zip`, verificato 2026-08-16) — ⚠️ lo stesso zip è duplicato anche in root della cartella band, non solo in `Spotlight\`: da ripulire (vedi regola 4) |
 | 02/09 | Frøm Zerø | ✅ pacchetto completo in `Spotlight\` (`FromZero_Pacchetto.zip` + file singoli: Articolo/Caption in md, WordPress HTML, PDF branded, logo, 9 slide), prodotto e verificato il 2026-08-16 — l'email di intake originale (`SpotlightFromZero.pdf`) resta nella stessa cartella come riferimento, non è stata cancellata |
 | 09/09 | Wild Berries | ✅ già in `Spotlight\` |
@@ -58,7 +58,7 @@ Utile prima di iniziare il lavoro su uno spotlight: controllare se il pacchetto 
 | 14/10 | 21 Guns | ✅ già in `Spotlight\` |
 | 21/10 | Napoli Blues | ✅ già in `Spotlight\` (cartella rinominata da `Napolin blues\` il 2026-08-16) |
 
-Solo Beernow (26/08, ora unica band su quel mercoledì dopo lo spostamento del Wonderwall al 20/08, vedi [[Calendario-Editoriale]]) parte da zero — The Wonderwall e Frøm Zerø hanno entrambi il pacchetto pronto (vedi sopra). Nota: Frøm Zerø è materiale di prova generato da Claude per validare gli standard di produzione, non ancora passato per revisione editoriale completa prima della pubblicazione.
+Aggiornato il 2026-08-25: anche Beernow (26/08, unica band su quel mercoledì dopo lo spostamento del Wonderwall al 20/08, vedi [[Calendario-Editoriale]]) ha ora il pacchetto completo, prodotto con la skill `/spotlight`. Nota: Frøm Zerø è materiale di prova generato da Claude per validare gli standard di produzione, non ancora passato per revisione editoriale completa prima della pubblicazione.
 
 🔧 **Attendibilità dei ✅ in questa tabella da riverificare**: il ✅ di Frøm Zerø si basava solo sulla presenza di un file dentro `Spotlight\`, non sul suo contenuto reale — era in realtà solo materiale grezzo (email di intake). Le altre righe ✅ (Wild Berries, Jar, The Paralyzed, Living Park, Black Sabbath Legacy, 21 Guns, Napoli Blues) sono state marcate con lo stesso criterio superficiale e non ancora riaperte una per una: possibile che alcune abbiano lo stesso problema.
 
