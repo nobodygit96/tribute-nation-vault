@@ -138,6 +138,7 @@ Diverso dal carosello Spotlight a 9 slide: qui ogni slide è un blocco di testo 
 - **Spoiler Spotlight**: slide singola, cita solo la band **originale** (mai la tribute, vedi [[Tone-of-Voice]]), tipicamente due elementi identificativi (anno/luogo/titolo disco) più riga di chiusura "Domani lo Spotlight."
 - **B-Side**: slide singola, segue la formula in [[Calendario-Editoriale]] (dato inaspettato → pivot → chiusura verso la tribute italiana, riga finale rossa)
 - **Dalla Nation per la Nation**: carosello 5 slide con progress bar, salvato in `DALLA NATION PER LA NATION\<D_MM_YY>\` (solo cartella con PNG, niente zip duplicato — regola 4 di [[Materiali-NAS]])
+- **Nation Garage** (formato deciso il 2026-08-26, prima 🔧 da confermare): carosello a N slide con progress bar, stesso motore statement-card, un tool/argomento per slide, salvato in `NATION GARAGE\<D_MM_YY>\`
 
 Verificato il 2026-08-17 sul pacchetto Desaparecidos (spoiler) / Soundgarden-Outshined (b-side) / community question (dalla nation, 21/08). 🔧 Attenzione accenti italiani nei config JSON: scrivere sempre il carattere accentato reale (è, à...) — un giro di prova aveva usato "e'" come placeholder ASCII per evitare problemi di encoding, non necessario: il font li supporta nativamente, va solo scritto il JSON con Write/Edit (non heredoc bash).
 

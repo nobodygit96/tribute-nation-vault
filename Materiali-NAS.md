@@ -19,12 +19,14 @@ Il NAS è raggiungibile come cartella di rete già mappata su Windows: **`Z:\`**
 | `GRAFICHE POST\` | Grafiche finite pronte per pubblicazione (bside, spoiler, ads, entra nella nation, ecc.), perlopiù flat |
 | `CALENDARIO_STORIE\` | Render settimanali (lunedì…domenica) per la story "Programmazione settimanale" |
 | `DALLA NATION PER LA NATION\<data>\` | Pacchetti datati per il contenuto del venerdì |
+| `NATION GARAGE\<data>\` | Pacchetti datati per il contenuto della domenica (stesso principio di Dalla Nation: solo PNG, niente zip) |
 | `FOTOGRAFI\<Nome fotografo>\` | Materiali/articoli per fotografi collaboratori (es. Gianmarco Bumbaca / Luce Rossa) |
 | `VIDEO\<banda>\` | Video per band (finora solo Flammen) |
 | `VenueDaPubblicare\<Locale>\` | Foto locale, in coda — stesso pattern "in coda" del Venue Tracker Notion |
 | `VenuePubblicati\<Locale>\` | Foto locale, dopo pubblicazione — spostare qui da sopra a lavoro finito |
 | `LogMonitor\tn-monitor-sicurezza.csv` | Log del Monitor interno di Daniele (vedi [[Funzionalita-Sito-e-Area-Riservata]]) |
 | `POST CALENDARIO\<DD_DD_MESE_ANno>.zip` | Carosello "Live della Nation" (contenuto del lunedì, vedi [[Calendario-Editoriale]]): roundup settimanale di tutti i live delle band della Nation, uno zip a settimana con slide numerate (cover + una per giorno con live programmati + chiusura "alla prossima settimana") |
+| `Report Meta Ads\<data>\` | Report e schemi prodotti dall'audit dell'ecosistema Meta (Business Manager, account pubblicitari, pixel, WhatsApp) — una sottocartella per data, creata il 2026-08-26 |
 | `TributeNation\` | Cartella mista: loghi brand (`LOGO_*.png/.psd`), asset sito, briefing/questionario, bundle deploy PHP (`SitoPhP\`), story "Live della settimana" (`calendario\`). Contiene anche `OBSIDIAN_TN\` — **uno snapshot vecchio e disallineato della KB** (ha ancora `Benvenuto.md`, eliminato dalla KB vera il 2026-08-16): non è una fonte di verità, ignorarlo. |
 
 ## Pattern dentro ogni cartella band (`Band della nation\<Nome>\`)

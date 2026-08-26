@@ -15,6 +15,8 @@ aggiornato: 2026-08-16
 
 Ogni tribute band ha una scheda pubblica completa: bio, formazione, foto, video, contatti, e una sezione "prossimi live" che si aggiorna da sola (nessun lavoro manuale). Il sito espone un calendario eventi pubblico con ricerca per tutta la scena, oltre a un blog editoriale con gli Spotlight.
 
+**Mappa della Nation** (`/mappa-live-band/`, verificata live il 2026-08-26): mappa d'Italia interattiva con due viste alternabili, "Copertura band della Nation" e "Dove sono i live", filtro per regione/provincia e lista laterale collegata ai pin sulla mappa. Al 2026-08-26 mostra 51 band in 19 province (contro le 47 band con pagina sito registrate il 2026-08-16 — il roster pubblicato è cresciuto nel frattempo, numero da rivedere periodicamente, non fissare).
+
 ### Accesso gratuito per le band ("Entra nella Nation")
 
 Le band possono candidarsi gratuitamente per una pagina sul sito, candidarsi per uno Spotlight, e compilare un form rapido per aggiungere una sola data — tutto senza bisogno di account. I form sono protetti da invii doppi accidentali.
