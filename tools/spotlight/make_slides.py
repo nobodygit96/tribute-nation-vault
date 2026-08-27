@@ -257,7 +257,7 @@ def main():
     if cfg.get("cover_photo_path"):
         cover_slide(
             os.path.join(cfg["output_dir"], f"{slug}_slide{idx}_cover.png"),
-            cfg["cover_photo_path"], logo_path, 390, cfg["band_name"],
+            cfg["cover_photo_path"], logo_path, cfg.get("cover_logo_w", 390), cfg["band_name"],
             center_pct=cfg.get("cover_vertical_center", 0.72),
             show_band_name=cfg.get("cover_show_band_name", True),
         )

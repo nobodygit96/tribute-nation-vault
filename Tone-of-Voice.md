@@ -62,6 +62,8 @@ Per i contenuti di tipo "👀 Spoiler TN" e "👁 Spoiler prossimo spotlight" (v
 
 Bilanciare narrazione originale e citazioni dirette. Le citazioni vanno sempre supportate da prosa contestuale prima e dopo — evitare di accumulare citazioni senza supporto. La narrazione porta la voce, le citazioni la puntellano.
 
+**Titoli, no formula ripetuta (2026-08-26):** evitare di ricadere sempre sullo schema "Banda: quando X diventa/succede Y" (usato per The Wonderwall, Desaparecidos, e proposto anche per Wild Berries prima della correzione di Vale). Ogni titolo va pensato dal singolo aneddoto/dettaglio più forte di quello spotlight, con struttura libera, non da uno stampo fisso riutilizzato spotlight dopo spotlight.
+
 ## Regole ferme
 
 - Zero em-dash (vedi regola sopra).
