@@ -62,6 +62,13 @@ Per i contenuti di tipo "👀 Spoiler TN" e "👁 Spoiler prossimo spotlight" (v
 
 Bilanciare narrazione originale e citazioni dirette. Le citazioni vanno sempre supportate da prosa contestuale prima e dopo — evitare di accumulare citazioni senza supporto. La narrazione porta la voce, le citazioni la puntellano.
 
+**Dispositivi retorici da tenere a mente (2026-08-26, da esempi esterni portati da Vale):**
+
+- *Tris aggettivo+avverbio in risonanza*: un'affermazione forte seguita da tre coppie aggettivo/avverbio in parallelo, stesso schema ritmico ripetuto tre volte (es. "È comoda emotivamente, innocua socialmente, sterile artisticamente."). Fonte d'ispirazione: un post su Ferragni/Al Ries ("instabile sentimentalmente, incoerente strategicamente, disperata economicamente").
+- *Negazione + correzione*: "X non va fatto-in-modo-sbagliato. Va fatto-in-modo-giusto." ripetuto 2-3 volte (es. "Le idee sbagliate non vanno vietate. Vanno esposte..."). L'aggancio a un'autorità storica/autorevole nell'esempio originale (Milton, Areopagitica) è facoltativo, non serve sempre — solo se rinforza davvero il punto e la fonte è verificata, mai inventata.
+
+Non sono regole fisse, sono strumenti da usare quando il pezzo lo richiede (articoli/opinion piece soprattutto, non spotlight standard).
+
 **Titoli, no formula ripetuta (2026-08-26):** evitare di ricadere sempre sullo schema "Banda: quando X diventa/succede Y" (usato per The Wonderwall, Desaparecidos, e proposto anche per Wild Berries prima della correzione di Vale). Ogni titolo va pensato dal singolo aneddoto/dettaglio più forte di quello spotlight, con struttura libera, non da uno stampo fisso riutilizzato spotlight dopo spotlight.
 
 ## Regole ferme
