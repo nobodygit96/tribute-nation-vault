@@ -17,9 +17,9 @@ aggiornato: 2026-08-16
 - 🔧 *Confermare con Vale se queste regole valgono esattamente così.*
 - **Regola fondamentale immutabile (Vale, 2026-08-17): prima di pushare un repo condiviso (`TributeNationKB.Cli`, `tribute-nation-kb`, qualunque altro), fare sempre `git pull`/`git fetch` per primo — senza eccezioni.** Motivo concreto: durante questa sessione `TributeNationKB.Cli` era 5 commit indietro, incluse modifiche a `ValidateCommand.cs` stesso — un `tnkb validate` lanciato prima del pull avrebbe potuto dare un risultato non affidabile senza che nessuno se ne accorgesse. Non fidarsi del fatto che "probabilmente non è cambiato niente": verificare sempre con `git fetch` + confronto (`git log HEAD..origin/<branch> --oneline`) prima di push, e se è un progetto compilato (come `TributeNationKB.Cli`), ribuildare dopo il pull prima di usare il binario.
 
-## Anonimato (critica, fissa)
+## Anonimato (critica, fissa, con un'unica eccezione)
 
-Non nominare mai Tribute Nation, il sito o l'handle Instagram in contesti legati al nome reale di Vale (es. LinkedIn). "Nobody" è la persona pubblica condivisa dei due co-fondatori (Vale e Daniele): mai un nome/cognome/titolo reale in nessun contenuto pubblico, indipendentemente da chi ha scritto quel contenuto. Dettagli in [[Identita-e-Ruolo]].
+Non nominare mai Tribute Nation, il sito o l'handle Instagram in contesti legati al nome reale di Vale, tranne l'unica eccezione decisa il 2026-08-31 (Vale e Daniele d'accordo): su LinkedIn si può nominare Tribute Nation legato al nome reale di Vale. Ovunque altro (CV, portfolio, altri profili) resta il divieto. "Nobody" è la persona pubblica condivisa dei due co-fondatori (Vale e Daniele) verso band/fan/locali: mai un nome/cognome/titolo reale in nessun contenuto pubblicato come Tribute Nation, indipendentemente da chi l'ha scritto. Dettagli in [[Identita-e-Ruolo]].
 
 ## Copy e testi pubblici
 

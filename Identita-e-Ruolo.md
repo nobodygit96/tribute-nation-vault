@@ -33,8 +33,9 @@ Tre anime del progetto:
 
 Il nome reale di Vale **non va mai associato** pubblicamente al brand Tribute Nation.
 
-- **LinkedIn:** il progetto va descritto in modo generico — "community digitale dedicata alla musica live in Italia" — **senza** nominare Tribute Nation, il sito o l'handle Instagram.
-- Il lavoro su TN dimostra competenze di marketing ma resta separato dall'identità pubblica di Vale in ogni profilo/contesto non legato al brand.
+- **LinkedIn (eccezione decisa il 2026-08-31 da Vale e Daniele):** su LinkedIn è ora possibile nominare Tribute Nation legandolo al nome reale di Vale, per valorizzare il progetto come esperienza professionale concreta. L'eccezione riguarda solo LinkedIn.
+- **Altrove (CV, portfolio, altri profili/contesti non-LinkedIn legati al nome reale):** resta la regola generale, progetto descritto in modo generico ("community digitale dedicata alla musica live in Italia"), senza nominare Tribute Nation, il sito o l'handle Instagram.
+- Verso band, fan e locali (contesto pubblico del brand) la persona resta sempre e solo "Nobody": l'eccezione LinkedIn non cambia nulla lato outreach o contenuti pubblicati come Tribute Nation.
 - Golden rule corrispondente in [[Regole-Operative-Claude]].
 
 ## Co-fondatori

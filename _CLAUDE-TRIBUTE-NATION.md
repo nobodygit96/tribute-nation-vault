@@ -26,6 +26,7 @@ aggiornato: 2026-08-16
 | [[Venue-Tracker]] | Database Notion venue/locali per outreach live |
 | [[Funzionalita-Sito-e-Area-Riservata]] | Cosa offre il sito oggi a band/locali/fan, area riservata, Monitor interno di Daniele |
 | [[Strategia-Mercato-e-Sviluppo]] | Diagnosi strategica, ricerca di mercato, idee di sviluppo prodotto (non decise) |
+| [[Servizi-a-Pagamento-Band]] | 🔧 Struttura decisa (3 livelli + listino a parte), prezzi fissati, ma tetti/sconti/infrastruttura pagamento ancora da chiudere |
 | [[Strumenti-e-Risorse]] | CMS, Canva, Notion MCP, email marketing, storage |
 | [[Team-Marketing-AI-e-Meta-Ads]] | 🔧 Bozza: ricerca su team di agenti AI dedicati e gestione Meta Ads (BM/Pixel/retargeting), da verificare e decidere passo passo |
 | [[Integrazione-Google-GTM-GA4-Search-Console]] | ⏸️ Roadmap e checklist pronte, non ancora iniziata: GTM, GA4, Search Console — in attesa di accessi/decisioni da Vale |

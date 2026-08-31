@@ -51,7 +51,7 @@ Le band restano **gratuite, sempre** — promessa scritta nel copy pubblico, da 
 
 4. **Matching band↔locale onesto**: indicatori semplici ("date libere" / "serate da coprire"), gestiti a mano da Nobody all'inizio, non un marketplace automatico (troppo pochi numeri oggi per reggerlo).
 
-5. **Pacchetto a pagamento per i locali** (mai per le band): unica via di monetizzazione compatibile con la promessa di gratuità.
+5. **Pacchetto a pagamento per i locali** (mai per le band): unica via di monetizzazione compatibile con la promessa di gratuità. **Superata il 2026-08-31**: Vale ha deciso di introdurre anche servizi a pagamento per le band, a patto che tutto il servizio gratuito di oggi resti invariato — dettaglio completo in [[Servizi-a-Pagamento-Band]].
 
 ## Istruzioni aggiuntive sui contenuti
 
@@ -73,3 +73,4 @@ Le band restano **gratuite, sempre** — promessa scritta nel copy pubblico, da 
 - [[Identita-e-Ruolo]]
 - [[Stato-e-Roadmap]]
 - [[Funzionalita-Sito-e-Area-Riservata]]
+- [[Servizi-a-Pagamento-Band]]
