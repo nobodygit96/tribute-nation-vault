@@ -34,20 +34,22 @@ Sfondo `#0A0A0A` con glow rosso radiale al centro (GaussianBlur 100px, intensit�
 - **Logo band + nome banda sotto** (deciso da Vale il 2026-08-16, sostituisce "nessun testo aggiuntivo": ora il nome banda va scritto sotto il logo, Bebas Neue bianco ~72px). Stesso ingombro verticale complessivo di prima (il vecchio standard "solo logo 700px" era comunque impreciso — misurato sul pixel reale del pacchetto Wonderwall risultava ~480px): logo ridotto a **~390px** + gap ~22px + nome banda, così la somma resta vicina ai ~480px di prima e la foto sotto non viene coperta più di quanto lo fosse già
 - Blocco logo+nome centrato orizzontalmente, **centro verticale al 72% dell'altezza del canvas** (non a metà) — lascia visibile la parte superiore della foto (viso/busto del performer) sopra il badge
 
-## Slide contenuto Spotlight
+## Slide contenuto e chiusura Spotlight — layout "logo eroe" (standard dal 2026-08-30)
 
-- Logo band 280-300px in alto
-- Tag rubrica rosso, divisore, testo centrato
-- **Titolo sempre bianco** (Bebas Neue, ~70px se corto/una riga, ~58px se più lungo/due righe — valori finali del 2026-08-16, dopo due giri di ingrandimento su richiesta di Vale). 🔧 **Decisione ribaltata il 2026-08-16**: durante la prova Wonderwall era emerso un titolo rosso per statement/numeri a effetto (es. "ANNI '90."); Vale ha chiesto di tornare a **tutti i titoli bianchi**, anche per le slide-statement — leggibilità migliore a schermo. Non usare più il rosso per i titoli in nessun caso, incluso il pull-quote di chiusura (vedi sotto).
-- Corpo testo: **33px** (valore finale, dopo due ingrandimenti da un 25px iniziale troppo piccolo)
-- Footer: solo logo TN + handle `@_tribute_nation_`, **senza numero di slide esplicito** (verificato sul pacchetto Wonderwall) — 🔧 la voce "numero slide nel footer" più sotto era nella KB prima di questa verifica diretta: confermare con Vale se altri spotlight già pubblicati lo includono davvero o se va corretta anche lì
+**Confermato da Vale il 2026-08-30** dopo un'intera sessione di iterazione sul problema "slide vuote / testo piccolo" (aggiustare solo le dimensioni dei font non bastava — il vero problema era strutturale). Sostituisce ogni versione precedente (logo piccolo in alto + testo sotto).
+
+- **Logo banda gigante e sbiadito** (780px di larghezza, opacità ~50%), tagliato dal bordo superiore del canvas (offset verticale -60px se il file logo include anche il nome scritto della banda, es. Wild Berries; -180px se è solo icona, es. Frøm Zerø — evitare di tagliare a metà una scritta). Riempie la metà superiore della slide **indipendentemente da quanto testo segue**: è questo, non la dimensione dei font, a risolvere il problema del vuoto.
+- **Banda scura** (`#060606`) nella metà inferiore, separata da una riga rossa piena larghezza (3px) — non un semplice divisore sottile.
+- Tag rubrica rosso, DM Sans Medium **30px**, subito sotto la riga rossa.
+- **Titolo sempre bianco** (mai rosso, nemmeno per pull-quote/statement — regola confermata il 2026-08-16, tuttora valida): Bebas Neue **80px se corto/una riga, 66px se più lungo** (slide contenuto); **66px/54px** per la citazione della slide di chiusura, leggermente più piccolo perché lì c'è anche il CTA da far stare.
+- Corpo testo: DM Sans **38px** (content slide), **34px** (closing slide, per lasciare spazio al CTA) — grigio.
+- CTA slide di chiusura ("Seguili su Instagram"): DM Sans **30px**, bianco/grigio chiaro, **non** rosso.
+- Footer: solo logo TN + handle `@_tribute_nation_`, senza numero di slide esplicito (verificato sul pacchetto Wonderwall).
+- **Corpo testo breve per regola, non per forza di font**: una frase sola per slide, non due concatenate — il layout "logo eroe" riempie comunque lo spazio anche con poco testo, quindi non serve gonfiare le frasi per "riempire" (errore fatto una volta l'8/16, corretto).
 - Sequenza di tag rubrica tipica su un arco di 9 slide (esempio Wonderwall): CHI SONO → PERCHÉ [ARTISTA ORIGINALE] → L'EPOCA D'ORO → IL LIVE → UN ANEDDOTO → FUORI DAL PALCO → IMITARE O TRASMETTERE → IL CONSIGLIO (chiusura)
 - **TRIBUTE TO TRIBUTE** (dal 2026-08-16, sostituisce il vecchio nome italiano "Band rispettate"): tag in inglese, unico tag non in italiano nella sequenza standard, per la slide/citazione quando la band nomina una tribute italiana che stima — solo se la domanda 8 del questionario dà una risposta citabile (vedi [[Pipeline-Contenuti-e-Roster]]), non è fissa in ogni spotlight
 
-## Slide di chiusura (ultima del carosello)
-
-- Stessa struttura delle slide contenuto (tag "IL CONSIGLIO" o simile) ma con pull-quote/citazione della band come titolo — **titolo bianco come tutte le altre slide** dal 2026-08-16 (prima era rosso, vedi sopra), ~62px se corto/una riga, ~50px se più lungo
-- CTA testuale ("Seguili su Instagram") in bianco/grigio chiaro, **non** rosso — la nota "CTA in rosso" nelle specifiche generali sopra si riferisce ad altri contesti (story, non questa slide)
+Implementazione: costanti `HERO_LOGO_W`/`HERO_LOGO_Y`/`HERO_BAND_TOP` e funzione condivisa `_hero_header()` in `make_slides.py`, usata sia da `content_slide()` sia da `closing_slide()`. Verificato su due loghi reali con geometrie diverse (icona pura Frøm Zerø, icona+testo Wild Berries).
 
 ## Format storia (1080x1920)
 
@@ -135,10 +137,22 @@ Emoji sempre rimosse dai PDF (font non le supportano), presenti invece nel `.md`
 
 Diverso dal carosello Spotlight a 9 slide: qui ogni slide è un blocco di testo centrato (nessun logo band), stesso sistema visivo (sfondo/font/colori/footer). Script dedicato `tools/spotlight/make_statement_slides.py` (riusa le funzioni di `make_slides.py`: sfondo, wrap, footer, font), config JSON per slide con lista di blocchi testo (font bebas/dmsans, size, colore, divider opzionale dopo). Supporta anche una progress bar in basso per i caroselli multi-slide (`progress_total`/`progress_index` nel config), come nel formato "Dalla Nation per la Nation".
 
-- **Spoiler Spotlight**: slide singola, cita solo la band **originale** (mai la tribute, vedi [[Tone-of-Voice]]), tipicamente due elementi identificativi (anno/luogo/titolo disco) più riga di chiusura "Domani lo Spotlight."
+- **Spoiler Spotlight**: slide singola, cita solo la band **originale** (mai la tribute, nemmeno per coincidenza di nomi — vedi [[Tone-of-Voice]]). **Corretto il 2026-08-30: un solo hook** (una parola o frase breve, anno/dettaglio/titolo), non due elementi impilati — stessa regola "niente muro di testo" del B-Side, la grafica crea curiosità, i dettagli stanno nella caption. Poi riga di chiusura "Domani lo Spotlight."
 - **B-Side**: slide singola, segue la formula in [[Calendario-Editoriale]] (dato inaspettato → pivot → chiusura verso la tribute italiana, riga finale rossa). **Regola grafica (2026-08-26, dopo un caso reale corretto):** dev'essere catchy, non un muro di testo — una sola frase breve, in font/size grande (bebas, stesso corpo usato per l'accento rosso), non tre blocchi di testo esteso. Il resto della formula (pivot, chiusura) resta nella caption, non necessariamente nella slide.
 - **Dalla Nation per la Nation**: carosello 5 slide con progress bar, salvato in `DALLA NATION PER LA NATION\<D_MM_YY>\` (solo cartella con PNG, niente zip duplicato — regola 4 di [[Materiali-NAS]])
 - **Nation Garage** (formato deciso il 2026-08-26, prima 🔧 da confermare): carosello a N slide con progress bar, stesso motore statement-card, un tool/argomento per slide, salvato in `NATION GARAGE\<D_MM_YY>\`
+
+**Standard di scala definitivo (2026-08-30, dopo feedback ripetuto "risulta vuoto/i testi sono piccoli"):** motore `make_statement_slides.py` aggiornato con questi valori fissi, non più da rivalutare slide per slide:
+
+- Tag rubrica header: DM Sans Medium **36px** (era 26px), posizione y=170 (era 254, più in alto)
+- `CONTENT_TOP=250`, `CONTENT_BOTTOM=H-170` (margini di contenuto più stretti, meno spazio morto sopra/sotto)
+- `BLOCK_GAP=20`, `DIVIDER_GAP=14` (era 34/26 — meno spazio tra un blocco e l'altro quando ci sono divisori)
+- Linea divisoria aggiunta anche in fondo al contenuto (a `H-195`), prima del footer — incornicia il contenuto invece di lasciarlo fluttuare
+- Footer: logo TN **190px** (era 150px, ora allineato alla specifica mai applicata), handle **26px** (era 22px)
+- **Hook breve in bebas** (frase corta/parola singola, tipo B-Side o hook dello Spoiler): **150-160px**, non più 64-110px — deve occupare davvero la slide, anche wrappando su due righe
+- **Riga secondaria/chiusura in DM Sans** (es. "Domani lo Spotlight.", corpo frase estesa tipo Dalla Nation): **40-46px**, non più 22-34px
+
+Regola di fondo invariata: **un solo hook per B-Side/Spoiler**, mai due elementi impilati — la dimensione si aumenta sul testo che c'è, non aggiungendo altro testo (vedi "Regola fondamentale grafica" sopra).
 
 Verificato il 2026-08-17 sul pacchetto Desaparecidos (spoiler) / Soundgarden-Outshined (b-side) / community question (dalla nation, 21/08). 🔧 Attenzione accenti italiani nei config JSON: scrivere sempre il carattere accentato reale (è, à...) — un giro di prova aveva usato "e'" come placeholder ASCII per evitare problemi di encoding, non necessario: il font li supporta nativamente, va solo scritto il JSON con Write/Edit (non heredoc bash).
 

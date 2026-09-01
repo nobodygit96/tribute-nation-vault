@@ -39,20 +39,20 @@ from PIL import ImageDraw  # noqa: E402
 
 COLORS = {"white": WHITE, "red": RED, "grey": GREY}
 
-CONTENT_TOP = 340
-CONTENT_BOTTOM = H - 200
-BLOCK_GAP = 34
-DIVIDER_GAP = 26
+CONTENT_TOP = 250
+CONTENT_BOTTOM = H - 170
+BLOCK_GAP = 20
+DIVIDER_GAP = 14
 
 
 def header_block(draw, header):
-    header_font = dm_sans(26, "Medium")
+    header_font = dm_sans(36, "Medium")
     text = header.upper()
     b = draw.textbbox((0, 0), text, font=header_font)
     w = b[2] - b[0]
-    y = 254
+    y = 170
     draw.text(((W - w) / 2, y), text, font=header_font, fill=RED)
-    divider_y = y + 42
+    divider_y = y + 54
     draw.line([(PAD, divider_y), (W - PAD, divider_y)], fill=DIVIDER, width=1)
     return divider_y
 
@@ -98,6 +98,9 @@ def statement_slide(filename, header, blocks, progress_total=None, progress_inde
                 y += DIVIDER_GAP
                 draw.line([(PAD, y), (W - PAD, y)], fill=DIVIDER, width=1)
                 y += DIVIDER_GAP
+
+    bottom_line_y = H - 195
+    draw.line([(PAD, bottom_line_y), (W - PAD, bottom_line_y)], fill=DIVIDER, width=1)
 
     footer(img, draw)
 

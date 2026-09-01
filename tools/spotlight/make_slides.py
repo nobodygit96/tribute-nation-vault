@@ -111,38 +111,56 @@ def paste_centered(img, overlay_path, target_w, top_y):
 
 
 def footer(img, draw):
-    tn_w = 150
-    y_top = paste_centered(img, LOGO_TN, tn_w, H - 130)
-    handle_font = dm_sans(22)
+    tn_w = 190
+    y_top = paste_centered(img, LOGO_TN, tn_w, H - 155)
+    handle_font = dm_sans(26)
     handle = "@_tribute_nation_"
     b = draw.textbbox((0, 0), handle, font=handle_font)
     w = b[2] - b[0]
     draw.text(((W - w) / 2, y_top + 6), handle, font=handle_font, fill=(140, 140, 140))
 
 
+HERO_LOGO_W = 780
+HERO_LOGO_Y = -60
+HERO_BAND_TOP = 560
+
+
+def _hero_header(img, draw, logo_path, tag):
+    """Logo banda gigante e sbiadito in alto, banda scura sotto separata da una riga rossa.
+    Standard 'hero logo' deciso da Vale il 2026-08-30 dopo 4 round di iterazione sul
+    problema 'slide vuote/testo piccolo' (vedi Produzione-Grafica-Social.md)."""
+    logo = Image.open(logo_path).convert("RGBA")
+    ratio = HERO_LOGO_W / logo.width
+    logo = logo.resize((HERO_LOGO_W, int(logo.height * ratio)), Image.LANCZOS)
+    alpha = logo.split()[3].point(lambda p: int(p * 0.5))
+    logo.putalpha(alpha)
+    img.paste(logo, ((W - HERO_LOGO_W) // 2, HERO_LOGO_Y), logo)
+
+    draw.rectangle([(0, HERO_BAND_TOP), (W, H)], fill=(6, 6, 6))
+    draw.line([(0, HERO_BAND_TOP), (W, HERO_BAND_TOP)], fill=RED, width=3)
+
+    tag_font = dm_sans(30, "Medium")
+    tag_up = tag.upper()
+    tb = draw.textbbox((0, 0), tag_up, font=tag_font)
+    tag_w = tb[2] - tb[0]
+    ty = HERO_BAND_TOP + 45
+    draw.text(((W - tag_w) / 2, ty), tag_up, font=tag_font, fill=RED)
+    return ty
+
+
 def content_slide(filename, logo_path, band_logo_w, tag, title, body):
     img = make_background()
     draw = ImageDraw.Draw(img)
-    paste_centered(img, logo_path, band_logo_w, 50)
+    ty = _hero_header(img, draw, logo_path, tag)
 
-    tag_font = dm_sans(26, "Medium")
-    tag_up = tag.upper()
-    b = draw.textbbox((0, 0), tag_up, font=tag_font)
-    tag_w = b[2] - b[0]
-    tag_y = 475
-    draw.text(((W - tag_w) / 2, tag_y), tag_up, font=tag_font, fill=RED)
+    title_font = bebas(80 if len(title) < 26 else 66)
+    title_lines = wrap(draw, title.upper(), title_font, W - 2 * PAD - 40)
+    body_font = dm_sans(38)
+    body_lines = wrap(draw, body, body_font, W - 2 * PAD - 80)
 
-    divider_y = tag_y + 42
-    draw.line([(PAD, divider_y), (W - PAD, divider_y)], fill=DIVIDER, width=1)
-
-    title_font = bebas(70 if len(title) < 26 else 58)
-    title_lines = wrap(draw, title.upper(), title_font, W - 2 * PAD)
-    body_font = dm_sans(33)
-    body_lines = wrap(draw, body, body_font, W - 2 * PAD - 60)
-
-    y = divider_y + 20
+    y = ty + 58
     y = draw_centered_block(draw, title_lines, title_font, y, WHITE, line_gap=1.05)
-    y += 15
+    y += 18
     draw_centered_block(draw, body_lines, body_font, y, GREY, line_gap=1.3)
 
     footer(img, draw)
@@ -153,30 +171,20 @@ def content_slide(filename, logo_path, band_logo_w, tag, title, body):
 def closing_slide(filename, logo_path, band_logo_w, tag, quote, body, cta):
     img = make_background()
     draw = ImageDraw.Draw(img)
-    paste_centered(img, logo_path, band_logo_w, 50)
+    ty = _hero_header(img, draw, logo_path, tag)
 
-    tag_font = dm_sans(26, "Medium")
-    tag_up = tag.upper()
-    b = draw.textbbox((0, 0), tag_up, font=tag_font)
-    tag_w = b[2] - b[0]
-    tag_y = 475
-    draw.text(((W - tag_w) / 2, tag_y), tag_up, font=tag_font, fill=RED)
+    title_font = bebas(66 if len(quote) < 40 else 54)
+    title_lines = wrap(draw, quote.upper(), title_font, W - 2 * PAD - 40)
+    body_font = dm_sans(34)
+    body_lines = wrap(draw, body, body_font, W - 2 * PAD - 80)
+    cta_font = dm_sans(30)
 
-    divider_y = tag_y + 42
-    draw.line([(PAD, divider_y), (W - PAD, divider_y)], fill=DIVIDER, width=1)
-
-    title_font = bebas(62 if len(quote) < 40 else 50)
-    title_lines = wrap(draw, quote.upper(), title_font, W - 2 * PAD)
-    body_font = dm_sans(33)
-    body_lines = wrap(draw, body, body_font, W - 2 * PAD - 60)
-
-    y = divider_y + 20
+    y = ty + 58
     y = draw_centered_block(draw, title_lines, title_font, y, WHITE, line_gap=1.05)
-    y += 15
+    y += 16
     y = draw_centered_block(draw, body_lines, body_font, y, GREY, line_gap=1.3)
 
-    y += 25
-    cta_font = dm_sans(28)
+    y += 14
     b = draw.textbbox((0, 0), cta, font=cta_font)
     w = b[2] - b[0]
     draw.text(((W - w) / 2, y), cta, font=cta_font, fill=(210, 210, 210))
@@ -269,9 +277,9 @@ def main():
         theme = s.get("theme") or s["tag"].lower().replace(" ", "")
         filename = os.path.join(cfg["output_dir"], f"{slug}_slide{idx}_{theme}.png")
         if s.get("closing"):
-            closing_slide(filename, logo_path, 280, s["tag"], s["quote"], s["body"], s.get("cta", "Seguili su Instagram"))
+            closing_slide(filename, logo_path, 340, s["tag"], s["quote"], s["body"], s.get("cta", "Seguili su Instagram"))
         else:
-            content_slide(filename, logo_path, 280, s["tag"], s["title"], s["body"])
+            content_slide(filename, logo_path, 340, s["tag"], s["title"], s["body"])
         idx += 1
 
 

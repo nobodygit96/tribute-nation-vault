@@ -51,7 +51,7 @@ Quando uno spotlight (o altro contenuto) viene anticipato o pubblicato fuori dal
 
 ## Tono per tipo di contenuto — Spoiler
 
-Per i contenuti di tipo "👀 Spoiler TN" e "👁 Spoiler prossimo spotlight" (vedi [[Calendario-Editoriale]]): tono **misterioso ma coinvolgente**. Anteprime su novità/progetti/sviluppi di Tribute Nation o sul prossimo spotlight, senza svelare troppo (es. teaser sul genere musicale senza rivelare il nome della band). Fonte: nota su Notion, pagina "👀 Spoiler Tribute Nation". Nello Spoiler Spotlight in particolare, il riferimento va sempre alla band **originale**, non alla tribute: la tribute si nomina solo nella caption, mai nella grafica (vedi [[Calendario-Editoriale]]).
+Per i contenuti di tipo "👀 Spoiler TN" e "👁 Spoiler prossimo spotlight" (vedi [[Calendario-Editoriale]]): tono **misterioso ma coinvolgente**. Anteprime su novità/progetti/sviluppi di Tribute Nation o sul prossimo spotlight, senza svelare troppo (es. teaser sul genere musicale senza rivelare il nome della band). Fonte: nota su Notion, pagina "👀 Spoiler Tribute Nation". Nello Spoiler Spotlight in particolare, il riferimento va sempre alla band **originale**, non alla tribute — **né nella grafica né nella caption** (corretto il 2026-08-26: la caption NON deve nominare la tribute, resta un teaser solo sull'artista tributato; l'indicazione precedente, che permetteva il nome della tribute in caption, era sbagliata). Vedi [[Calendario-Editoriale]].
 
 ## Struttura articolo (spotlight, ~1000-1200 parole)
 
