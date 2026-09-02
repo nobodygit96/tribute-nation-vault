@@ -52,7 +52,7 @@ Utile prima di iniziare il lavoro su uno spotlight: controllare se il pacchetto 
 | 26/08 | Beernow | ✅ pacchetto completo in `Spotlight\` (`Beernow_Pacchetto.zip` + file singoli: Articolo md/HTML/PDF, Caption md/PDF, logo, 9 slide), prodotto e verificato il 2026-08-25. Caricato su Drive (`Approvazioni Spotlight\Beernow\`) |
 | 20/08 (spostato dal 26/08, straordinario) | The Wonderwall | ✅ pacchetto completo in `Spotlight\` (`Wonderwall_Pacchetto.zip`, verificato 2026-08-16) — ⚠️ lo stesso zip è duplicato anche in root della cartella band, non solo in `Spotlight\`: da ripulire (vedi regola 4) |
 | 02/09 | Frøm Zerø | ✅ pacchetto completo in `Spotlight\` (`FromZero_Pacchetto.zip` + file singoli: Articolo/Caption in md, WordPress HTML, PDF branded, logo, 9 slide), prodotto e verificato il 2026-08-16 — l'email di intake originale (`SpotlightFromZero.pdf`) resta nella stessa cartella come riferimento, non è stata cancellata |
-| 09/09 | Wild Berries | ✅ già in `Spotlight\` |
+| 09/09 | Wild Berries | ✅ pacchetto completo in `Spotlight\` (`WildBerries_Pacchetto.zip` + file singoli: Articolo/Caption in md, WordPress HTML, PDF branded, logo, 9 slide + cover), verificato per intero il 2026-09-02 (articolo 1105 parole, zero em-dash, hero-logo layout su tutte le content/closing slide) — mancavano WordPress HTML/PDF articolo/PDF caption/zip, generati in questa verifica |
 | 16/09 | Jar | ✅ già in `Spotlight\` |
 | 23/09 | The Paralyzed | ✅ già in `Spotlight\` |
 | 30/09 | Living Park | ✅ già in `Spotlight\` |

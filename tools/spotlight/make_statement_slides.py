@@ -67,7 +67,14 @@ def measure_blocks(draw, blocks):
         max_w = W - 2 * PAD - (0 if blk["font"] == "bebas" else 60)
         lines = wrap(draw, blk["text"].upper() if blk["font"] == "bebas" else blk["text"], font, max_w)
         bbox = draw.textbbox((0, 0), "Hg", font=font)
-        line_h = (bbox[3] - bbox[1]) * (1.05 if blk["font"] == "bebas" else 1.3)
+        # Bug noto (2026-09-02): a 1.05 l'interlinea bebas e' piu' stretta
+        # dell'altezza reale del glifo. Su un hook che wrappa su piu' righe,
+        # una lettera accentata maiuscola (es. "Ù") della riga N+1 puo' finire
+        # a sovrapporsi verticalmente al corpo pieno di una lettera della riga
+        # N (stesso colore): l'accento resta disegnato ma diventa invisibile,
+        # "mangiato" dal colore identico sotto. Non e' un bug di font/encoding,
+        # e' mancanza di spazio verticale. Vedi Regole-Operative-Claude.
+        line_h = (bbox[3] - bbox[1]) * (1.15 if blk["font"] == "bebas" else 1.3)
         block_h = line_h * len(lines)
         rendered.append({"lines": lines, "font": font, "color": COLORS[blk["color"]], "line_h": line_h})
         total += block_h

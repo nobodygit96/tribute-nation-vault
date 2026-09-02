@@ -159,7 +159,7 @@ def content_slide(filename, logo_path, band_logo_w, tag, title, body):
     body_lines = wrap(draw, body, body_font, W - 2 * PAD - 80)
 
     y = ty + 58
-    y = draw_centered_block(draw, title_lines, title_font, y, WHITE, line_gap=1.05)
+    y = draw_centered_block(draw, title_lines, title_font, y, WHITE, line_gap=1.15)
     y += 18
     draw_centered_block(draw, body_lines, body_font, y, GREY, line_gap=1.3)
 
@@ -180,7 +180,7 @@ def closing_slide(filename, logo_path, band_logo_w, tag, quote, body, cta):
     cta_font = dm_sans(30)
 
     y = ty + 58
-    y = draw_centered_block(draw, title_lines, title_font, y, WHITE, line_gap=1.05)
+    y = draw_centered_block(draw, title_lines, title_font, y, WHITE, line_gap=1.15)
     y += 16
     y = draw_centered_block(draw, body_lines, body_font, y, GREY, line_gap=1.3)
 

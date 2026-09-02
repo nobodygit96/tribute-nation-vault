@@ -29,6 +29,7 @@ Italiano, tono rock/diretto come da [[Tone-of-Voice]], firmati "Nobody" quando �
 
 - Le emoji non renderizzano in Pillow → usare sostituti grafici (freccette, triangoli).
 - I caratteri accentati italiani richiedono unicode escape nei heredoc Python.
+- **Bug interlinea bebas su titoli multi-riga (trovato 2026-09-02):** con `line_gap` troppo stretto (era 1.05), una lettera accentata maiuscola (es. "Ù") su una riga wrappata può finire a sovrapporsi verticalmente al corpo di una lettera della riga sopra, con lo stesso colore: l'accento resta disegnato ma diventa invisibile, non è un bug di font/encoding. Fix applicato: `line_gap=1.15` sia in `make_statement_slides.py::measure_blocks` (hook bebas) sia in `make_slides.py::content_slide/closing_slide` (titolo hero-logo). Prima di consegnare qualunque titolo bebas che wrappa su 2+ righe con una lettera accentata maiuscola, controllare visivamente che l'accento sia visibile su ogni riga, non solo sulla prima.
 - I caratteri cirillici (es. Я) richiedono FreeSansBold (`/usr/share/fonts/truetype/freefont/FreeSansBold.ttf`) perché Bebas Neue non supporta il cirillico.
 - Trasparenza logo: mascherare i pixel dove r,g,b < 40.
 - Specifiche complete (canoni social, script Python, struttura pacchetto) in [[Produzione-Grafica-Social]].
