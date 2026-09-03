@@ -128,8 +128,10 @@ altro**: nessun merge forzato, nessuna sovrascrittura — il repository resta co
 risolvi a mano. Log di ogni esecuzione in `C:\Users\vmann\Documents\tnkb-sync\logs\`.
 
 🔧 Gira solo se il PC è acceso a quell'ora (Task Scheduler di Windows non riavvia/sveglia la
-macchina di default). Non copre la tua vault Obsidian locale (questa cartella): non è ancora un
-repository git, quindi non ha backup su GitHub — solo `tribute-nation-kb` è coperto da questo sync.
+macchina di default). Copre solo `tribute-nation-kb` — questo vault Obsidian ha il proprio sync
+separato (`TributeNationVault-DailySync`, vedi sopra), **corretto 2026-09-03**: la frase precedente
+qui diceva che questa cartella "non è ancora un repository git", stesa prima del 2026-08-17 e mai
+tolta dopo che lo è diventata (vedi sezione "Questo vault è ora un repository git" sopra).
 
 ## Sync automatico settimanale — `TributeNationKB.Cli`
 

@@ -59,6 +59,10 @@ Le locandine "al mese" si contano sul **mese di abbonamento/fatturazione** (quan
 - Banner su directory di nicchia: nessun prezzo pubblico di mercato, si negozia caso per caso
 - Abbonamenti piattaforme musicali simili (SoundCloud Pro, BandLab Pro): €8-12/mese fascia entry, €20-30/mese fascia premium — Main Stage e Headliner TN si posizionano sopra questa fascia: scelta consapevole, il pacchetto include più servizi concreti (locandine, banner, logo) di un abbonamento streaming generico
 
+## Sequenza (deciso da Vale, 2026-09-03)
+
+Il lancio resta sospeso: non è ancora chiaro come procedere e mancano passi di infrastruttura. **Priorità esplicita: consolidare prima l'area locali e fan**, poi tornare su questo. Fino ad allora, verso l'esterno (outreach, campagne di recruiting) si parla solo del livello gratuito.
+
 ## 🔧 Da decidere
 
 - Tetto locandine Headliner (proposto 6-8/mese)

@@ -8,6 +8,10 @@ description: >
   approvazione, restituendo il link finale da girare alla banda. Usa quando
   l'utente dice "facciamo uno spotlight", "prepara lo spotlight di <banda>",
   "/spotlight <banda>", o chiede di produrre il pacchetto spotlight per una band.
+  Usa ANCHE per verificare/riverificare un pacchetto spotlight già segnato "pronto"
+  in Materiali-NAS (es. "controlla se lo spotlight di <banda> è davvero completo",
+  "verifica il pacchetto di <banda>") — non fidarti mai di una spunta "✅" scritta
+  in passato senza controllo reale, vedi Fase E.
 ---
 
 # Spotlight — produzione end-to-end
@@ -92,9 +96,11 @@ un ok esplicito. Non procedere alla Fase C prima di quello.
 ## Checkpoint 3 — Verifica pacchetto completo
 
 Mostra il pacchetto finale (testi + tutte le slide + PDF) all'utente. Itera sulle
-correzioni finché non arriva un ok esplicito. Non caricare nulla prima di quello.
+correzioni finché non arriva un ok esplicito. **Non scrivere nulla su NAS né su Drive
+prima di quello** — l'approvazione dell'utente è sempre il gate che precede qualunque
+salvataggio reale (Fase D), non solo il caricamento su Drive.
 
-## Fase D — Salvataggio (autonoma)
+## Fase D — Salvataggio (solo dopo Checkpoint 3)
 
 1. **NAS** (`Z:\TRIBUTE NATION\Band della nation\<Banda>\Spotlight\`): pacchetto
    **completo** — `{Band}_Articolo.md`, `_WordPress.html`, `.pdf`, `{Band}_Caption.md`
@@ -115,6 +121,36 @@ correzioni finché non arriva un ok esplicito. Non caricare nulla prima di quell
 4. Restituisci all'utente il link della cartella madre Drive
    (`https://drive.google.com/drive/folders/1Hv2TevgqdKaEFfNIQulaMWUOLfHWUnnF`) —
    la banda apre quel link e trova la propria sottocartella per nome.
+
+## Fase E — Verifica di completezza (autonoma, anche standalone)
+
+Due pacchetti segnati "✅ pronto" in [[Materiali-NAS]] (Frøm Zerø, Wild Berries) si sono
+rivelati incompleti alla verifica reale: uno era solo l'email di intake, l'altro mancava
+WordPress HTML/PDF articolo/PDF caption/zip. 2 su 2 controllati erano falsi positivi — non
+c'è motivo di credere che le prossime spunte siano più affidabili senza controllarle.
+
+Questa fase gira in due situazioni: in coda alla Fase D appena prodotto un pacchetto nuovo,
+oppure **da sola**, quando l'utente chiede di ricontrollare un pacchetto già esistente
+(in questo caso salta dritto qui, non serve rifare A-D).
+
+1. Esegui `python tools/spotlight/check_package.py --dir "Z:/TRIBUTE NATION/Band della
+   nation/<Banda>/Spotlight" --slug <Slug>` (lo slug è il prefisso usato nei nomi file,
+   es. `WildBerries`). Controlla in automatico: presenza di tutti i file attesi, numero di
+   slide, conteggio parole articolo, assenza di em-dash in articolo e caption, numero di
+   file dentro lo zip.
+2. Lo script **non puo'** controllare a occhio: apri almeno la cover e 2-3 slide di
+   contenuto e verifica che rispettino il layout "hero logo" (logo gigante sbiadito in
+   alto, banda scura sotto, divisore rosso — vedi [[Produzione-Grafica-Social]]), che il
+   testo non sia tagliato, e che — se un titolo bebas wrappa su più righe con una lettera
+   accentata maiuscola che compare più di una volta — l'accento sia visibile su ogni riga
+   (bug di interlinea corretto il 2026-09-02, ma verificalo comunque su pacchetti generati
+   prima di quella data).
+3. Controlla anche che ogni citazione nell'articolo sia un blockquote vero, introdotto da
+   prosa di contesto prima (regola ferma, vedi [[Tone-of-Voice]]) — lo script non lo
+   verifica, va letto.
+4. Riporta un esito chiaro: pacchetto completo, o elenco preciso di cosa manca/va rifatto.
+   Se stavi verificando uno stato "✅" preesistente e risulta falso, **correggi subito**
+   la riga in [[Materiali-NAS]] invece di lasciarla lì com'era.
 
 ## Vedi anche
 

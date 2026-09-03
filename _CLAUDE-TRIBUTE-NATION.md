@@ -36,6 +36,15 @@ aggiornato: 2026-08-16
 | [[Stato-e-Roadmap]] | Stato attuale, prossimi passi, bug aperti |
 | [[LOG]] | Cronologia degli aggiornamenti a questa KB |
 
+## Skill disponibili (`.claude/skills/`)
+
+| Skill | Cosa fa |
+|---|---|
+| `spotlight` | Pacchetto spotlight completo per una band (articolo, caption, HTML, 9 slide, PDF); include anche la verifica di completezza di un pacchetto già esistente |
+| `statement-card` | Grafica Spoiler/B-Side/Dalla Nation per la Nation/Nation Garage |
+| `live-della-nation` | Caption del lunedì (roundup live della settimana) |
+| `meta-schedule` | Caricamento e programmazione di un post su Meta Business Suite |
+
 ## Come mantenere viva la KB
 
 A fine sessione significativa, chiedi a Claude: *"Aggiorna la KB con quello che abbiamo fatto oggi."* Claude deve:

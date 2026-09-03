@@ -28,6 +28,20 @@ aggiornato: 2026-08-26
 
 > **Lezione da questa sessione**: un'informazione riferita a voce ("BM e Pixel ci sono già") si è rivelata solo parzialmente vera alla verifica diretta (BM sì, Pixel no). Buona pratica confermata: verificare da browser prima di pianificare su stati non controllati direttamente, specialmente quando cambiano le priorità a valle.
 
+## Campagna recruiting band via sponsorizzazione (decisa il 2026-09-02, da impostare la sera stessa)
+
+Prima inserzione vera pianificata per Tribute Nation. Obiettivo: far conoscere il progetto a tribute band che non lo conoscono ancora e portarle a candidarsi tramite "Entra nella Nation" — parla solo del livello gratuito, i pacchetti a pagamento non sono ancora nel copy pubblico (vedi [[Servizi-a-Pagamento-Band]]).
+
+- **Obiettivo campagna:** Traffico (clic al link), non Notorietà/Messaggi.
+- **Budget:** €4/giorno, **durata 14 giorni** (~€56 totali). Confermato da Vale.
+- **Account pubblicitario:** `2429131157229173` (canonico, PayPal collegato), da usare **solo** via Gestione inserzioni (adsmanager.facebook.com) — mai il pulsante nativo "Metti in evidenza"/"Promuovi" di Instagram, che porta all'account personale di Vale senza pagamento collegato (vedi sezione sopra, 2026-08-26).
+- **Formati creativi**, in `GRAFICHE POST\recruiting_band_02_09_26\`: `recruiting_band_single.png` (1080x1080, feed) e `recruiting_band_story.png` (1080x1920, Storie/Reel — copre anche il placement WhatsApp Status che riusa lo stesso asset). Hook: "Ogni tribute band in Italia ha un posto qui."
+- **Targeting:** admin di Pagine Facebook incrociato con interessi musicali (cover band, strumenti, generi rock/metal/pop), età 25-55, geografia Italia intera. Confermato da Vale.
+- **Copy diviso nei campi Meta**: testo primario = caption lunga (lista servizi con emoji, vedi caption approvata); titolo breve = "Entra nella Nation, gratis"; descrizione = "Pagina, Spotlight, calendario e bot: tutto gratis."
+- **UTM: deciso di non usarli per questa campagna (2026-09-02)**. GA4/GTM/Search Console non sono ancora attivi sul sito (vedi sezione "Ancora da verificare" sopra), quindi nessuno strumento leggerebbe i parametri UTM oggi — il link di destinazione resta pulito. Da riconsiderare quando GA4 sarà installato: a quel punto tracciare le campagne a pagamento separatamente dal traffico organico diventa un lavoro sensato da fare.
+- **🔧 Da chiudere la sera dell'impostazione**: scelta del CTA button ("Registrati" vs "Scopri di più").
+- **Nota di funnel (non ancora confermata con Daniele)**: il link punta alla pagina "Entra nella Nation" (spiega i servizi), non direttamente alla registrazione — scelta pensata per traffico freddo da inserzione, che ha bisogno di un passaggio di "riscaldamento" prima di chiedere la creazione di un account.
+
 ## 1. Team marketing AI dedicato
 
 Metodo (da Grace Leung): mappare i task ricorrenti reali → una skill per workflow → raggruppare skill non sovrapposte in agenti dedicati → routing esplicito in `CLAUDE.md`.

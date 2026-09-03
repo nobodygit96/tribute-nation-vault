@@ -28,9 +28,9 @@ aggiornato: 2026-08-16
 - Lancio canale WhatsApp (Telegram già lanciato — vedi sopra).
 - Scouting venue e outreach in espansione continua — outreach Notion ancora fermo a "🔍 Da contattare" al 2026-06-20 (vedi [[Venue-Tracker]]); l'Area Venue pubblica sul sito è **online**, con 1 locale visibile su 6 censiti/pronti (vedi [[Venue-Tracker]]).
 - Spingere le 34 band con pagina sito ma senza spotlight verso il processo Spotlight (vedi [[Pipeline-Contenuti-e-Roster]]).
-- Riallineare lo Stato su Notion (Band Tracker/Piano Editoriale) con lo stato reale sul sito — compito di Vale (query bulk non disponibili, vedi [[Strumenti-e-Risorse]]).
+- Riallineare lo Stato su Notion (Band Tracker/Piano Editoriale) con lo stato reale sul sito — **da tentare ogni sera da Claude** (2026-09-03), entry per entry via `notion-search`/`notion-fetch` (query bulk non disponibili, vedi [[Strumenti-e-Risorse]]); se impraticabile, promemoria esplicito a Vale invece di lasciarlo scivolare.
 - Analytics sito (GA4) non ancora attivo: nessun dato di traffico da mostrare alle band come prova di valore — gap strategico aperto, vedi [[Strategia-Mercato-e-Sviluppo]].
-- Campo email/referente sulla scheda band: manca, è il collo di bottiglia identificato per qualsiasi automazione di contatto — vedi [[Strategia-Mercato-e-Sviluppo]].
+- ~~Campo email/referente sulla scheda band: manca~~ — **corretto 2026-09-03, esisteva già**: campo pubblico "Email di contatto" sulla scheda band dal 07/08/2026 (obbligatorio nei form, offuscato anti-scraping) e colonne "Nome Gestore"/"Email Gestore" nel Monitor interno per ogni band che ha rivendicato la pagina (fonte: KB tecnica di Daniele, `reference/scheda-band.md` Round 10). Copre però solo le band che hanno **già rivendicato** la pagina, non tutte le 47 con pagina pubblica né le 80+ del Band Tracker. Da chiarire: quante l'hanno fatto, e se quel dato è già esportabile verso Brevo per l'outreach o va ancora collegato.
 - Idee di sviluppo prodotto (EPK scaricabile, date portabili, "segui la band" su Telegram, matching band↔locale, pacchetto a pagamento per i locali): nessuna decisa, solo proposte — vedi [[Strategia-Mercato-e-Sviluppo]].
 
 ### Cosa NON è ancora vero (da non comunicare come attivo)
