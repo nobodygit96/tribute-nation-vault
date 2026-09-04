@@ -18,7 +18,7 @@ WordPress + Elementor + tema Astra + Yoast SEO, hosting Aruba. (dettagli tecnici
 
 ## Email marketing
 
-Brevo — gestione consenso, privacy policy.
+🔧 **Brevo non è ancora attivo** (corretto il 2026-09-04, prima scritto per errore come già in uso): account da creare, non ancora configurato. Valutato come strumento per email marketing/remarketing, gestione consenso e privacy policy, ma resta da fare da zero.
 
 ## Meta Ads
 

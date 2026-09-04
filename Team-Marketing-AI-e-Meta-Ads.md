@@ -96,7 +96,7 @@ Principio trasversale: **mai dati/numeri inventati** — qualunque agente che to
 - [ ] Costruire l'agente Trovabilità/SEO partendo dai topic di §8 (Fase 2)
 - [ ] Costruire l'agente Metriche/Reporting (Fase 4, bloccato su GA4 attivo)
 - [ ] Coordinarsi con Daniele sullo sviluppo parallelo del team agenti
-- [ ] Decidere se/quando caricare il database Brevo come Custom Audience (richiede consenso già raccolto)
+- [ ] Decidere se/quando caricare il database Brevo come Custom Audience (richiede consenso già raccolto) — 🔧 bloccato finché Brevo stesso non è attivo, vedi correzione sotto
 
 ## 4. Altre idee e applicazioni concrete
 
@@ -113,7 +113,7 @@ Principio trasversale: **mai dati/numeri inventati** — qualunque agente che to
 - Non mischiare pubblici di valore diverso (visitatori sito vs interazione pagina) in uno stesso Custom Audience, salvo necessità di aggregare per la size minima.
 - GDPR: consenso esplicito obbligatorio per caricare un database contatti come Custom Audience — verificare che Brevo copra anche questo uso, non solo l'email.
 - Budget minimo: si può testare anche con 5€/giorno su pubblici piccoli.
-- Retargeting (ads a pagamento) vs remarketing (email via Brevo, già in uso) — distinguere sempre i due nella pianificazione.
+- Retargeting (ads a pagamento) vs remarketing (email via Brevo) — distinguere sempre i due nella pianificazione. **Correzione 2026-09-04**: Brevo non è ancora attivo per TN (nessun account, nessun invio reale finora), contrariamente a quanto scritto qui prima. Il "remarketing via Brevo" era una previsione, non uno stato attuale.
 - Non essere aggressivi con target sensibili (es. locali in difficoltà economica) — testare il tono prima di scalare.
 
 ## 6. Roadmap operativa e gap analysis (ricerca del 2026-08-24)
