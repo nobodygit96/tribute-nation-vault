@@ -44,6 +44,7 @@ aggiornato: 2026-08-16
 | `statement-card` | Grafica Spoiler/B-Side/Dalla Nation per la Nation/Nation Garage |
 | `live-della-nation` | Caption del lunedì (roundup live della settimana) |
 | `meta-schedule` | Caricamento e programmazione di un post su Meta Business Suite |
+| `meta-ads-campaign` | Costruzione e pubblicazione di una campagna a pagamento su Gestione Inserzioni Meta |
 
 ## Come mantenere viva la KB
 
