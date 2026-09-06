@@ -1,6 +1,6 @@
 ---
 tags: [kb, sito, funzionalita, area-riservata, MARKETING, WEB]
-aggiornato: 2026-08-16
+aggiornato: 2026-09-06
 ---
 
 # Funzionalità Sito e Area Riservata
@@ -24,6 +24,8 @@ Le band possono candidarsi gratuitamente per una pagina sul sito, candidarsi per
 ### Accesso gratuito per i locali ("Entra nella Nation Venue")
 
 Stesso principio: candidatura gratuita per la scheda locale (con controllo automatico dei duplicati) e form per segnalare più serate contemporaneamente, con possibilità di includere una locandina.
+
+**Gestione autonoma della scheda locale (confermata attiva, 2026-09-06)**: con un account gratuito, un locale rivendica la propria scheda e la gestisce in autonomia dall'area riservata, esattamente come le tribute band — stesso meccanismo descritto sopra per l'Area riservata band. Corregge la nota precedente che la dava come "sviluppata, non ancora attiva".
 
 ### Area riservata (novità di agosto)
 
@@ -59,7 +61,6 @@ Il Monitor è cresciuto per versioni successive (l'ultima, "v6", è dell'11/08/2
 
 ## Funzionalità già sviluppate ma non ancora attive
 
-- **Rivendicazione anche per i locali** (stesso meccanismo delle band): sviluppata, non ancora attiva
 - **Dati per Google** (SEO) sulle schede band: pronti, non ancora pubblicati
 - **Filtri di ricerca su band** (nome, artista tributato, genere): questi sono già attivi dall'8/08
 
@@ -67,13 +68,16 @@ Il Monitor è cresciuto per versioni successive (l'ultima, "v6", è dell'11/08/2
 
 L'Area Venue del sito è online — dettaglio completo, numeri e cronologia in [[Venue-Tracker]].
 
+## Area Fan con account (confermata attiva, 2026-09-06)
+
+Corregge la nota precedente ("i fan hanno solo form di contatto e il bot Telegram, nessun account personale"): i fan hanno oggi un account gratuito vero (email o login social Google/Facebook), possono seguire le band preferite, ricevere notifiche su nuove date su tre canali (push, email, Telegram), generare un link calendario che si aggiorna da solo, commentare sotto schede e articoli, installare il sito come PWA, e cancellare account/dati in autonomia. Dettaglio completo: [[16 - Post Funzionalità Fan]].
+
 ## Cosa NON è ancora disponibile
 
 Attenzione: non comunicare i seguenti come funzionalità già attive:
 
 - **Analytics del sito** (GA4): non è ancora acceso — nessun numero reale di traffico disponibile da mostrare a una band come prova di valore
 - **Email diretto sulla scheda band**: nessun campo email pubblico sulla pagina del sito (solo via Notion/casella email principale) — quindi nessun avviso automatico "una band a cui interessa" è possibile oggi
-- **Area Fan con account**: i fan hanno solo form di contatto e il bot Telegram, nessun account personale
 - **Il Monitor come servizio clienti**: non è una funzionalità del sito per band/locali/fan — è uno strumento interno di Daniele. Non va mai citato in comunicazioni verso clienti.
 
 ## Vedi anche
