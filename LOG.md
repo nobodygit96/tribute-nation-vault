@@ -1,6 +1,6 @@
 ---
 tags: [kb, log, changelog, MARKETING]
-aggiornato: 2026-08-26
+aggiornato: 2026-09-09
 ---
 
 # Log — Cronologia aggiornamenti KB
@@ -9,6 +9,7 @@ aggiornato: 2026-08-26
 
 > **Una riga per entry, non un paragrafo** (pattern LLM Wiki di Karpathy: il log dev'essere grep-abile, non narrativo — il "perché" e i dettagli vivono nella nota toccata, non qui). Formato: `- **YYYY-MM-DD** [tag] testo breve. [[Note toccate]].` Tag: `ingest` (nuova fonte esterna integrata), `verifica` (controllo diretto fatto, es. sul sito live), `correzione` (fix di un errore precedente in KB), `audit` (lint passato, contraddizioni/link/frontmatter), `struttura` (riorganizzazione della KB stessa). Più recente in alto.
 
+- **2026-09-09** [struttura] Creato TikTok For Business/Business Center (collegato all'account @_tribute_nation_ esistente via OAuth, non un duplicato) e un Pixel TikTok browser-only (ID DAGQL4BC77UC8FLJUT30). Codice base inserito in un Code Snippet sul sito, salvato non attivo in attesa di revisione tn-deploy-reviewer prima dell'attivazione. [[Strumenti-e-Risorse]].
 - **2026-09-08** [correzione] Rimosso il bot ManyChat sulla chat Instagram (@_tribute_nation_): automazione "Auto-send links from comments, story replies, or DMs" cancellata, canale Instagram disconnesso da ManyChat (192 contatti raccolti eliminati con la disconnessione, come da avviso nativo di ManyChat). Account ManyChat lasciato vuoto/disconnesso ma non eliminato del tutto (scelta di Vale). Mai stato documentato in KB prima d'ora, nessuna nota da aggiornare.
 
 - **2026-09-06** [correzione] Confermato con Vale che Area Fan con account e gestione autonoma scheda locale (rivendicazione + modifica) sono ora davvero attive: corrette due note in [[Funzionalita-Sito-e-Area-Riservata]] che le davano ancora come non disponibili (stantie dal 16/08). Pubblicato e programmato il post Nation Garage "Prima le band. Ora tocca ai fan." (Facebook + Instagram, 6/09 ore 11:00) con carosello 8 slide su benefici concreti per i fan.

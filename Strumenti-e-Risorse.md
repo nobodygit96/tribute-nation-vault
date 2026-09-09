@@ -1,6 +1,6 @@
 ---
 tags: [kb, strumenti, tools, MARKETING, WEB]
-aggiornato: 2026-08-25
+aggiornato: 2026-09-09
 ---
 
 # Strumenti e Risorse
@@ -54,6 +54,17 @@ Nonostante il nome "Remarketing" il targeting reale è **Advantage+ automatico s
 - **Pixel Meta: installato e funzionante** — dataset "TributeNation" (ID 1034973242374407) attivo su tributenation.it, riceve eventi in tempo reale via Meta Pixel + Conversions API. Essere nello stesso BM non basta: il dataset va condiviso esplicitamente asset per asset (scheda "Risorse collegate" del dataset) — fatto anche questo il 2026-08-23 per `act=2429131157229173`, confermato funzionante creando un Pubblico Personalizzato di prova.
 - **Dominio tributenation.it: Verificato** su Business Manager (2026-08-23) — meta-tag `facebook-domain-verification` inserito via Code Snippet sul sito (revisionato da `tn-deploy-reviewer`), cache svuotata, scraping Meta forzato via Sharing Debugger Tool.
 - Follower al 2026-08-23 (dalla Pagina): Facebook 180, Instagram 649 — più aggiornato dello snapshot di luglio 2026 in [[Stato-e-Roadmap]] (154/400), che resta comunque valido come riferimento storico.
+
+## TikTok
+
+> Verificato/creato da browser il 2026-09-09, su richiesta di Vale ("tracciamento e corretta configurazione della pagina TikTok").
+
+- **Account TikTok pubblico**: esiste già, `@_tribute_nation_` ("TributeNation"), 20 follower, 481 mi piace. Bio: "la casa delle tribute band italiane", link a `tr.ee/4vUXQD` e `tributenation.it`. **"Verifica dell'azienda"** (Business Verification) nelle impostazioni TikTok risulta **spenta** — sblocca strumenti di marketing/funzionalità esclusive, non ancora attivata (richiede probabilmente dati aziendali reali, non avviata oggi in autonomia).
+- **TikTok For Business / Business Center: creato il 2026-09-09.** Account TikTok esistente collegato via OAuth (schermata di conferma "TributeNation ⇄ TikTok For Business", non un account nuovo/duplicato). Dati inseriti: nome azienda "Tribute Nation" (⚠️ modificabile una sola volta, in fase di verifica account — non cambiarlo per errore), sito tributenation.it, settore "Intrattenimento e media / Altro intrattenimento", spesa pubblicitaria dichiarata "< 300 SGD/mese" (nessuna spesa reale ancora), telefono +39 392 891 2701 (stesso numero WhatsApp Business), email di registrazione `nobody.tribute.nation@gmail.com`. Advertiser ID `7683604822907289618`, nome account ads "Tribute Nation_adv".
+- L'account pubblicitario non può ancora pubblicare annunci reali ("Il tuo accordo sul posizionamento degli annunci non è ancora in vigore o è già scaduto" — richiede attivazione/contatto commerciale TikTok, normale per un account nuovo) — non blocca però la configurazione del tracciamento.
+- **Pixel TikTok creato**: nome "TributeNation", ID `DAGQL4BC77UC8FLJUT30`, tipo **browser-only** (non "Pixel + API eventi" — quella variante richiede sviluppo lato server, rimandato, non fatto oggi).
+- **Installazione sul sito**: codice base inserito in un nuovo Code Snippet ("TikTok - Pixel base (tracciamento)", ID snippet 110) su tributenation.it, stesso meccanismo già usato per il Pixel Meta (hook `wp_head`). Salvato **non attivo**, in attesa di revisione `tn-deploy-reviewer` prima dell'attivazione — 🔧 **da confermare l'esito e l'attivazione effettiva nella prossima verifica**.
+- 🔍 **Scoperta collaterale**: sul sito risulta installato un plugin dedicato "Meta Pixel for WordPress" ("quasi pronto, completa la configurazione" in bacheca wp-admin) — lo snippet manuale usato in precedenza per il Pixel Meta ("Meta Business - Verifica dominio") non risulta più tra gli snippet attivi. Sembra che qualcuno (probabilmente Daniele, tra il 26/08 e oggi) abbia migrato quella parte a un plugin dedicato. Non approfondito né toccato in questa sessione — solo notato.
 
 ## Notion MCP
 
