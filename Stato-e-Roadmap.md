@@ -1,6 +1,6 @@
 ---
 tags: [kb, stato, roadmap, todo, MARKETING, WEB]
-aggiornato: 2026-08-16
+aggiornato: 2026-09-10
 ---
 
 # Stato Attuale e Roadmap
@@ -32,6 +32,7 @@ aggiornato: 2026-08-16
 - Analytics sito (GA4) non ancora attivo: nessun dato di traffico da mostrare alle band come prova di valore — gap strategico aperto, vedi [[Strategia-Mercato-e-Sviluppo]].
 - ~~Campo email/referente sulla scheda band: manca~~ — **corretto 2026-09-03, esisteva già**: campo pubblico "Email di contatto" sulla scheda band dal 07/08/2026 (obbligatorio nei form, offuscato anti-scraping) e colonne "Nome Gestore"/"Email Gestore" nel Monitor interno per ogni band che ha rivendicato la pagina (fonte: KB tecnica di Daniele, `reference/scheda-band.md` Round 10). Copre però solo le band che hanno **già rivendicato** la pagina, non tutte le 47 con pagina pubblica né le 80+ del Band Tracker. Da chiarire: quante l'hanno fatto, e se quel dato è già esportabile verso Brevo per l'outreach o va ancora collegato.
 - Idee di sviluppo prodotto (EPK scaricabile, date portabili, "segui la band" su Telegram, matching band↔locale, pacchetto a pagamento per i locali): nessuna decisa, solo proposte — vedi [[Strategia-Mercato-e-Sviluppo]].
+- **Area Fotografi/Videomaker** (richiesta da Vale il 10/09/2026): nuova sezione del sito, copia 1:1 dello schema Area Band (pagina indice, pagina profilo, iscrizione in 3 passaggi, associazione Monitor) adattata ai professionisti — spec funzionale completa aperta come **TN-163 sulla TN Board del Monitor** (repo Sito, priorità Media). Nessun audit tecnico fatto ancora, solo requisito funzionale. Le domande per lo spotlight dedicato ai fotografi arriveranno separatamente da Vale.
 - 🔧 **Da capire (aggiunto da Vale, 2026-09-04)**: sul fronte cybersecurity e assicurazioni, se e come TN debba procedere per il sito (polizza, requisiti minimi di sicurezza); e se ci sono obblighi da rispettare per l'AI Act (Regolamento UE 2024/1689, in vigore dal 2 agosto 2026) rispetto a come TN usa già l'AI nei contenuti. Nessuna ricerca fatta ancora, solo segnalato.
 
 ### Cosa NON è ancora vero (da non comunicare come attivo)

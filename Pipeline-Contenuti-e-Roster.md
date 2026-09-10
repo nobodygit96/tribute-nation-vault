@@ -1,6 +1,6 @@
 ---
 tags: [kb, pipeline, roster, contenuti, MARKETING]
-aggiornato: 2026-08-24
+aggiornato: 2026-09-10
 ---
 
 # Pipeline Contenuti e Roster
@@ -64,6 +64,24 @@ Il materiale arriva via email a `nobody@tributenation.it` con oggetto `[SPOTLIGH
 10. Saluto per i fan
 
 La domanda 8 spiega la slide "Tribute to Tribute" (nuovo nome dal 2026-08-16, prima "Band rispettate") citata in [[Regole-Operative-Claude]]: non è un elemento a sé, è l'esito di questa domanda — se la band nomina una tribute italiana specifica compare come slide/citazione, altrimenti no (caso Wonderwall, caso Frøm Zerø con "Tribute to Tribute" sui SaD).
+
+## Questionario spotlight - Fotografi/Videomaker
+
+Non è un adattamento 1:1 del questionario band sopra. Ricostruito il 10/09/2026 dall'unico precedente reale, Luce Rossa/Gianmarco Bumbaca, `FOTOGRAFI\GIANMARCO BUMBACA\LuceRossa_Articolo.pdf`. Nessun questionario grezzo salvato a parte, solo l'articolo finito. Corretto poi da Vale: meno domande tecniche, più filosofia del mestiere. Un'intervista deve far capire la persona dietro la fotocamera, non l'attrezzatura, che il 90% dei lettori non sa valutare comunque.
+
+1. Come nasce la tua passione per la fotografia dei concerti?
+2. Qual è stato il momento in cui hai capito che non era più un hobby ma una vocazione?
+3. Il tuo primo concerto fotografato davvero da fotografo. Com'è andata?
+4. Qual è la sfida più grande nel tuo lavoro? La tua filosofia dietro l'obiettivo
+5. Come descriveresti il tuo stile di fotografia?
+6. Lo scatto di cui vai più fiero in assoluto
+7. Perché le tribute band meritano di essere raccontate
+8. Qual è la parte più importante del lavoro, oltre alle foto in sé?
+9. Che genere ti piace di più fotografare, e qual è la sfida tecnica più dura?
+10. Se potessi scegliere un solo concerto della storia da fotografare, quale sarebbe?
+11. I tuoi gusti musicali sono cambiati nel tempo? Dove ti seguiamo?
+
+L'attrezzatura, fotocamera e obiettivi, era una sezione tecnica nell'articolo di Luce Rossa. Non è più una domanda dedicata. Resta solo uno spazio facoltativo in coda: se vuoi, raccontaci anche con cosa lavori. Su richiesta esplicita di Vale, chi vuole approfondirla lo fa comunque, ma non è più centrale nella struttura. Collegato a [[Stato-e-Roadmap]], Area Fotografi, TN-163 sulla TN Board del Monitor.
 
 ## Database Notion
 

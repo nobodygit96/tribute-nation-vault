@@ -29,6 +29,8 @@ aggiornato: 2026-08-16
 | [[Servizi-a-Pagamento-Band]] | 🔧 Struttura decisa (3 livelli + listino a parte), prezzi fissati, ma tetti/sconti/infrastruttura pagamento ancora da chiudere |
 | [[Strumenti-e-Risorse]] | CMS, Canva, Notion MCP, email marketing, storage |
 | [[Team-Marketing-AI-e-Meta-Ads]] | 🔧 Bozza: ricerca su team di agenti AI dedicati e gestione Meta Ads (BM/Pixel/retargeting), da verificare e decidere passo passo |
+| [[Ecosistema-Meta-Audit-e-Piano]] | Audit completo dell'ecosistema Meta (BM, Pagina, Instagram, asset), piano d'azione proposto, nessuna azione eseguita finché non autorizzata |
+| [[Report-Portfolio-Sponsorizzate-Meta]] | Campagne sponsorizzate per portfolio personale di Vale (dati reali, brand omesso) |
 | [[Integrazione-Google-GTM-GA4-Search-Console]] | ⏸️ Roadmap e checklist pronte, non ancora iniziata: GTM, GA4, Search Console — in attesa di accessi/decisioni da Vale |
 | [[Materiali-NAS]] | Mappa cartelle NAS (Z:\), pattern materiali band/venue, regole di salvataggio |
 | [[Stack-Tecnico-Sito]] | WordPress, pagine, admin, CSS, calendario eventi (per lo più 🔧 da completare) |

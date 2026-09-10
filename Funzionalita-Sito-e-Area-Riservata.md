@@ -70,7 +70,7 @@ L'Area Venue del sito è online — dettaglio completo, numeri e cronologia in [
 
 ## Area Fan con account (confermata attiva, 2026-09-06)
 
-Corregge la nota precedente ("i fan hanno solo form di contatto e il bot Telegram, nessun account personale"): i fan hanno oggi un account gratuito vero (email o login social Google/Facebook), possono seguire le band preferite, ricevere notifiche su nuove date su tre canali (push, email, Telegram), generare un link calendario che si aggiorna da solo, commentare sotto schede e articoli, installare il sito come PWA, e cancellare account/dati in autonomia. Dettaglio completo: [[16 - Post Funzionalità Fan]].
+Corregge la nota precedente ("i fan hanno solo form di contatto e il bot Telegram, nessun account personale"): i fan hanno oggi un account gratuito vero (email o login social Google/Facebook), possono seguire le band preferite, ricevere notifiche su nuove date su tre canali (push, email, Telegram), generare un link calendario che si aggiorna da solo, commentare sotto schede e articoli, installare il sito come PWA, e cancellare account/dati in autonomia. Confermata attiva il 2026-09-06 e comunicata in un post Nation Garage ("Prima le band. Ora tocca ai fan.") con carosello 8 slide su benefici concreti — vedi [[LOG]].
 
 ## Cosa NON è ancora disponibile
 
